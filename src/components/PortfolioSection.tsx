@@ -1,6 +1,18 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import cherry from "/uploads/cherry.jpeg";
+import avivia from "/uploads/avivia.jpeg";
+import marchef from "/uploads/marchef.jpeg";
+import ceustudio from "/uploads/ceustudio.jpeg";
+import migusmar from "/uploads/migusmar.jpeg";
+import portalbrasil from "/uploads/portal-brasil.jpeg";
+import jkaibrindes from "/uploads/jkaibrindes.png";
+import portfolio from "/uploads/portfolio.png";
+import triv from "/uploads/triv.jpeg";
+import psi from "/uploads/psi.png";
+import mkfretes from "/uploads/mkfretes.jpeg";
+import crcode from "/uploads/crcode.jpeg";
 
 interface PortfolioSectionProps {
   isDarkMode: boolean;
@@ -12,84 +24,84 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
       title: "Plataforma E-commerce",
       description: "Loja Virtual completa e funcional, com integração de checkout de pagamento, cadastro/login, cálculo automático de frete, cadastro de produtos, divisão por categorias e gestão de estoque.",
       tech: ["WordPress", "PostgreSQL", "APIs Externas", "HTML", "CSS", "JavaScript", "WooCommerce"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/cherry-site.jpeg",
+      image: cherry,
       link: "https://cherryhomedecor.com.br/"
     },
     {
       title: "Site Institucional com Blog",
       description: "Site institucional moderno e responsivo, com blog dinâmico para postagens, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
       tech: ["React", "Node.js", "PostgreSQL", "JWT"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/05/avivia.jpeg",
+      image: avivia,
       link: "https://www.avivia.com.br/"
     },
     {
       title: "Site Institucional com Blog",
       description: "Site institucional moderno e responsivo, com blog dinâmico para postagens, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
       tech: ["WordPress", "Elementor", "PHP", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/03/marchef.jpeg",
+      image: marchef,
       link: "https://marchefpescados.com.br/"
     },
     {
       title: "Portal de Notícias",
       description: "Portal de notícias, com carrossel de notícias e controle de posts e área de membros.",
       tech: ["Angular", "Go Lang", "TypeScript", "MySQL"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/ceustudio-site.jpeg",
+      image: ceustudio,
       link: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/ceustudio-site.jpeg"
     },
     {
       title: "Site Institucional com Aplicação",
       description: "Site Institucional com aplicação de monitoramento do estoque (gestão das importações).",
       tech: ["React", "Node", "Firebase", "PostgreSQL"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/migusmar-site.jpeg",
+      image: migusmar,
       link: "https://migusmar.com.br/"
     },
     {
       title: "Site Institucional com Blog",
       description: "Site Institucional com blog, e controle de publicações, separados por categorias.",
       tech: ["WordPress", "Elementor", "PHP", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/03/portal-brasil.jpeg",
+      image: portalbrasil,
       link: "https://portalbrasilofficial.com/"
     },
     {
       title: "Plataforma E-commerce",
       description: "Loja Virtual completa e funcional, com integração de checkout de pagamento, cadastro/login, cálculo automático de frete, cadastro de produtos, divisão por categorias e gestão de estoque.",
       tech: ["WordPress", "PostgreSQL", "APIs Externas", "HTML", "CSS", "PHP", "JavaScript", "WooCommerce"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/jkaibrindes-scaled.png",
+      image: jkaibrindes,
       link: "https://jkaibrindes.com.br/"
     },
     {
       title: "Portfólio Profissional",
       description: "Portfólio profissional com listagem de serviços e projetos já realizados. Foco em performance e credibilidade, visando captação de novos clientes.",
       tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/GC.png",
+      image: portfolio,
       link: "https://gabrielcavalcanti.tech/"
     },
     {
       title: "Site Institucional",
       description: "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.",
       tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/triv-site.jpeg",
+      image: triv,
       link: "https://agenciatriv.com.br/"
     },
     {
       title: "Landing Page Profissional",
       description: "Landing page profissional que une design moderno, boa usabilidade e comunicação eficiente para apresentação da profissional.",
       tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/psi.png",
+      image: psi,
       link: "https://psilucianaprazeres.netlify.app/"
     },
     {
       title: "Landing Page Profissional",
       description: "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.",
       tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2025/05/mkfretes.jpeg",
+      image: mkfretes,
       link: "https://mkfretesemudancas.com.br/"
     },
     {
       title: "Landing Page Profissional",
       description: "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.",
       tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/crcode-site.jpeg",
+      image: crcode,
       link: "https://crcode.com.br/"
     }
   ];

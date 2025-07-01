@@ -1,3 +1,7 @@
+import jwt from "/uploads/jwt.png";
+import bcrypt from "/uploads/bcrypt.svg";
+import api from "/uploads/api.svg";
+import styled from "/uploads/styled.svg";
 
 interface TechIconProps {
   name: string;
@@ -55,7 +59,7 @@ const TechIcon = ({ name, className }: TechIconProps) => {
         );
       case 'styled-components':
         return (
-          <img src="https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/styled.png" alt="Styled Components" className={className} />
+          <img src={styled} alt="Styled Components" className={className} />
         );
       case 'node.js':
         return (
@@ -87,15 +91,15 @@ const TechIcon = ({ name, className }: TechIconProps) => {
         );
       case 'jwt':
         return (
-          <img src="https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/jwt.png" alt="JWT" className={className} />
+          <img src={jwt} alt="JWT" className={className} />
         );
       case 'bcrypt':
         return (
-          <img src="https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/bcrypt.png" alt="bcrypt" className={className} />
+          <img src={bcrypt} alt="bcrypt" className={className} />
         );
       case 'api':
         return (
-          <img src="https://gabrielcavalcanti.tech/wp-content/uploads/2025/07/api.png" alt="RESTful API" className={className} />
+          <img src={api} alt="RESTful API" className={className} />
         );
       case 'git':
         return (

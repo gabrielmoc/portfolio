@@ -34,7 +34,7 @@ const HomeSection = ({ isDarkMode }: HomeSectionProps) => {
                 : 'border-blue-600/50'
             }`}>
               <img 
-                src="/lovable-uploads/92dba405-8002-4e67-a42a-2847a7417351.png" 
+                src="/uploads/foto.png" 
                 alt="Gabriel Moura de Oliveira Cavalcanti"
                 className="w-full h-full object-cover"
               />

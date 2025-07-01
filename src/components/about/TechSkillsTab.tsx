@@ -2,6 +2,7 @@
 import TechIcon from "./TechIcon";
 import { frontEndTechs, backEndTechs, toolsTechs } from "@/data/aboutData";
 
+
 interface TechSkillsTabProps {
   isDarkMode: boolean;
 }
