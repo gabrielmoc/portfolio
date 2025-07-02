@@ -8,8 +8,8 @@ interface HomeSectionProps {
 
 const HomeSection = ({ isDarkMode }: HomeSectionProps) => {
   const handleDownloadResume = () => {
-    window.open('https://gabrielcavalcanti.tech/wp-content/uploads/2025/06/Curriculo-de-Gabriel-Cavalcanti-Dev.pdf', '_blank');
-  };
+  window.open('/uploads/curriculo.pdf', '_blank');
+};
 
   const handleWhatsApp = () => {
     window.open('https://wa.me/5581982071987', '_blank');
