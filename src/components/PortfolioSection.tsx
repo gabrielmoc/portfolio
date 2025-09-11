@@ -13,6 +13,7 @@ import triv from "/uploads/triv.jpeg";
 import psi from "/uploads/psi.png";
 import mkfretes from "/uploads/mkfretes.jpeg";
 import crcode from "/uploads/crcode.jpeg";
+import nobile from "/uploads/nobile.png";
 
 interface PortfolioSectionProps {
   isDarkMode: boolean;
@@ -32,7 +33,14 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
       description: "Site institucional moderno e responsivo, com blog dinâmico para postagens, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
       tech: ["React", "Node.js", "PostgreSQL", "JWT"],
       image: avivia,
-      link: "https://www.avivia.com.br/"
+      link: "https://avivia-tau.vercel.app/"
+    },
+    {
+      title: "Marketplace de Relógios de Luxo",
+      description: "Marketplace completo, moderno e funcional, com integração de checkout de pagamento, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
+      tech: ["React", "Node.js", "PostgreSQL", "JWT", "Stripe"],
+      image: nobile,
+      link: "https://nobile-three.vercel.app/"
     },
     {
       title: "Site Institucional com Blog",

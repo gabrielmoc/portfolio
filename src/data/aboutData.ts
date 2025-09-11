@@ -47,6 +47,11 @@ export const toolsTechs: Tech[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Accenture",
+    position: "Desenvolvedor Back-End Pleno",
+    period: "08/2025 - Presente"
+  },
+  {
     company: "Rbianco",
     position: "Desenvolvedor Front-End Jr",
     period: "05/2025 - Presente"
@@ -78,7 +83,9 @@ export const courses: string[] = [
   "SQL para Análise de Dados - UDEMY",
   "Git e Github - ALURA",
   "Curso Completo de Power BI - HASHTAG",
-  "Monitoria Java e Python - MONITORIA NEXT"
+  "Monitoria Java e Python - MONITORIA NEXT",
+  "AWS Academy Cloud Foundations",
+  "AWS Academy Machine Learning Foundations"
 ];
 
 export const projects: string[] = [
