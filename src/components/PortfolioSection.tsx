@@ -14,6 +14,7 @@ import psi from "/uploads/psi.png";
 import mkfretes from "/uploads/mkfretes.jpeg";
 import crcode from "/uploads/crcode.jpeg";
 import nobile from "/uploads/nobile.png";
+import lucasmiranda from  "/uploads/lucasmiranda.jpeg";
 
 interface PortfolioSectionProps {
   isDarkMode: boolean;
@@ -53,8 +54,8 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
       title: "Portal de Notícias",
       description: "Portal de notícias, com carrossel de notícias e controle de posts e área de membros.",
       tech: ["Angular", "Go Lang", "TypeScript", "MySQL"],
-      image: ceustudio,
-      link: "https://gabrielcavalcanti.tech/wp-content/uploads/2024/12/ceustudio-site.jpeg"
+      image: lucasmiranda,
+      link: "https://reporterlucasmiranda.com.br/"
     },
     {
       title: "Site Institucional com Aplicação",
