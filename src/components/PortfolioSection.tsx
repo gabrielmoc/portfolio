@@ -15,6 +15,7 @@ import mkfretes from "/uploads/mkfretes.jpeg";
 import crcode from "/uploads/crcode.jpeg";
 import nobile from "/uploads/nobile.png";
 import lucasmiranda from  "/uploads/lucasmiranda.jpeg";
+import ceno from  "/uploads/ceno.jpeg";
 
 interface PortfolioSectionProps {
   isDarkMode: boolean;
@@ -112,6 +113,13 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
       tech: ["React", "HTML", "CSS", "JavaScript"],
       image: crcode,
       link: "https://crcode.com.br/"
+    },
+    {
+      title: "Site Institucional com Blog",
+      description: "Site Institucional com blog, e controle de publicações, separados por categorias.",
+      tech: ["React", "JavaScript", "GTranslate"],
+      image: ceno,
+      link: "https://cenolimited.com/"
     }
   ];
 
