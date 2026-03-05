@@ -16,6 +16,7 @@ import crcode from "/uploads/crcode.jpeg";
 import nobile from "/uploads/nobile.png";
 import lucasmiranda from  "/uploads/lucasmiranda.jpeg";
 import ceno from  "/uploads/ceno.jpeg";
+import siga from  "/uploads/siga.jpeg";
 
 interface PortfolioSectionProps {
   isDarkMode: boolean;
@@ -120,6 +121,13 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
       tech: ["React", "JavaScript", "GTranslate"],
       image: ceno,
       link: "https://cenolimited.com/"
+    },
+    {
+      title: "Plataforma de Gestão",
+      description: "Plataforma full-stack para gestão de outorgas de recursos hídricos, com fluxo multi-etapas, validações de negócio, georreferenciamento, geração de documentos e monitoramento operacional.",
+      tech: ["React", "JavaScript", "Typescript", "Vite", "Django", "JWT", "PostgreSQL", "Redis", "Gunicorn"],
+      image: siga,
+      link: "https://siga.igarn.rn.gov.br/"
     }
   ];
 

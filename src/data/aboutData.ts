@@ -69,8 +69,16 @@ export const experiences: Experience[] = [
   {
     company: "Agilité Assessoria Contábil (Estágio)",
     position: "Analista de Dados",
-    period: "05/2024 - Presente"
+    period: "05/2024 - 05/2025"
   }
+];
+
+export const projects: string[] = [
+  "Plataforma para gestão de outorgas de recursos hídricos e monitoramento operacional. - Projeto de Pesquisa para a UFAL",
+  "Sistema de Cadastro de Eventos e Usuários - Projeto Profissional",
+  "Sistema de Intermediação na Vendas de Bebidas - Faculdade", 
+  "Loja Virtual com Integração de Banco de Dados - Faculdade",
+  "Aplicação Web de Gestão de Passagens Aéreas - Faculdade"
 ];
 
 export const courses: string[] = [
@@ -86,11 +94,4 @@ export const courses: string[] = [
   "Monitoria Java e Python - MONITORIA NEXT",
   "AWS Academy Cloud Foundations",
   "AWS Academy Machine Learning Foundations"
-];
-
-export const projects: string[] = [
-  "Sistema de Cadastro de Eventos e Usuários",
-  "Sistema de Intermediação na Vendas de Bebidas", 
-  "Loja Virtual com Integração de Banco de Dados",
-  "Aplicação Web de Gestão de Passagens Aéreas"
 ];
