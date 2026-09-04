@@ -32,14 +32,14 @@ const EducationTab = ({ isDarkMode }: EducationTabProps) => {
           isDarkMode 
             ? 'text-gray-400' 
             : 'text-slate-500'
-        }`}>Cursando - Início em 08/2022 (7° Período)</p>
+        }`}>Cursando - Início em 08/2022 (8º Período)</p>
         <div className="space-y-2">
           <div className="flex justify-between text-sm">
             <span className={isDarkMode ? 'text-gray-300' : 'text-slate-600'}>Concluído</span>
-            <span className={isDarkMode ? 'text-gray-300' : 'text-slate-600'}>87,5%</span>
+            <span className={isDarkMode ? 'text-gray-300' : 'text-slate-600'}>99%</span>
           </div>
           <Progress 
-            value={87.5} 
+            value={99} 
             className={`h-2 ${
               isDarkMode 
                 ? 'bg-slate-700' 

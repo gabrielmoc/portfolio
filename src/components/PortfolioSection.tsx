@@ -17,6 +17,7 @@ import nobile from "/uploads/nobile.png";
 import lucasmiranda from  "/uploads/lucasmiranda.jpeg";
 import ceno from  "/uploads/ceno.jpeg";
 import siga from  "/uploads/siga.jpeg";
+import relato from "/uploads/relato.jpeg";
 
 interface PortfolioSectionProps {
   isDarkMode: boolean;
@@ -24,6 +25,13 @@ interface PortfolioSectionProps {
 
 const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
   const projects = [
+    {
+      title: "Site Institucional com Blog",
+      description: "Site institucional moderno e responsivo, com blog dinâmico para postagens e aplicação de monitoramento do estoque (gestão das importações).",
+      tech: ["React", "Node", "Blog", "GTranslate"],
+      image: relato,
+      link: "https://relato-temporal-web.vercel.app/"
+    },
     {
       title: "Plataforma E-commerce",
       description: "Loja Virtual completa e funcional, com integração de checkout de pagamento, cadastro/login, cálculo automático de frete, cadastro de produtos, divisão por categorias e gestão de estoque.",
