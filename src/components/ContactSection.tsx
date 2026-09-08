@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -18,6 +19,7 @@ interface ContactSectionProps {
 }
 
 const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -36,8 +38,8 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
     e.preventDefault();
     
     // Create mailto link with form data
-    const subject = `Contato de ${formData.name}`;
-    const body = `Nome: ${formData.name}\nEmail: ${formData.email}\nCelular: ${formData.phone}\n\nMensagem:\n${formData.message}`;
+    const subject = `${t("Contato de")} ${formData.name}`;
+    const body = `${t("Nome")}: ${formData.name}\nEmail: ${formData.email}\n${t("Celular")}: ${formData.phone}\n\n${t("Mensagem")}:\n${formData.message}`;
     const mailtoLink = `mailto:gabrielmoc2010@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     window.open(mailtoLink, '_blank');
@@ -95,16 +97,12 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
           isDarkMode 
             ? 'text-white' 
             : 'text-slate-800'
-        }`}>
-          Vamos trabalhar juntos!
-        </h2>
+        }`}>{t("Vamos trabalhar juntos!")}</h2>
         <p className={`text-center mb-16 max-w-2xl mx-auto text-lg transition-colors duration-300 ${
           isDarkMode 
             ? 'text-gray-400' 
             : 'text-slate-600'
-        }`}>
-          Tem um projeto em mente ou quer trocar uma ideia? Entre em contato e vamos falar isso!
-        </p>
+        }`}>{t("Tem um projeto em mente ou quer trocar uma ideia? Entre em contato e vamos falar isso!")}</p>
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
@@ -118,7 +116,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                 isDarkMode 
                   ? 'text-white' 
                   : 'text-slate-800'
-              }`}>Envie uma mensagem</CardTitle>
+              }`}>{t("Envie uma mensagem")}</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -126,7 +124,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   <Input
                     type="text"
                     name="name"
-                    placeholder="Seu nome"
+                    placeholder={t("Seu nome")} aria-label={t("Seu nome")}
                     value={formData.name}
                     onChange={handleInputChange}
                     className={`transition-colors duration-300 ${
@@ -141,7 +139,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   <Input
                     type="email"
                     name="email"
-                    placeholder="Seu email"
+                    placeholder={t("Seu email")} aria-label={t("Seu email")}
                     value={formData.email}
                     onChange={handleInputChange}
                     className={`transition-colors duration-300 ${
@@ -156,7 +154,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   <Input
                     type="tel"
                     name="phone"
-                    placeholder="Seu celular"
+                    placeholder={t("Seu celular")} aria-label={t("Seu celular")}
                     value={formData.phone}
                     onChange={handleInputChange}
                     className={`transition-colors duration-300 ${
@@ -170,7 +168,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                 <div>
                   <Textarea
                     name="message"
-                    placeholder="Sua mensagem"
+                    placeholder={t("Sua mensagem")} aria-label={t("Sua mensagem")}
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={5}
@@ -189,9 +187,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                       ? 'bg-blue-600 hover:bg-blue-500 text-white' 
                       : 'bg-blue-500 hover:bg-blue-600 text-white'
                   }`}
-                >
-                  Enviar
-                </Button>
+                >{t("Enviar")}</Button>
               </form>
             </CardContent>
           </Card>
@@ -208,17 +204,14 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   isDarkMode 
                     ? 'text-white' 
                     : 'text-slate-800'
-                }`}>Entre em contato</CardTitle>
+                }`}>{t("Entre em contato")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className={`mb-6 leading-relaxed transition-colors duration-300 ${
                   isDarkMode 
                     ? 'text-gray-300' 
                     : 'text-slate-600'
-                }`}>
-                  Estou disponível para conversas rápidas e projetos. Ligue ou envie uma mensagem no WhatsApp! 
-                  Ou se preferir algo mais formal? Envie um e-mail e responderei o mais rápido possível.
-                </p>
+                }`}>{t("Estou disponível para conversas rápidas e projetos. Ligue ou envie uma mensagem no WhatsApp! Ou se preferir algo mais formal? Envie um e-mail e responderei o mais rápido possível.")}</p>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className={`w-5 h-5 transition-colors duration-300 ${
@@ -266,9 +259,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                       isDarkMode 
                         ? 'text-gray-300' 
                         : 'text-slate-600'
-                    }`}>
-                      Recife, PE - Brazil
-                    </span>
+                    }`}>{t("Recife, PE - Brazil")}</span>
                   </div>
                 </div>
               </CardContent>
@@ -284,7 +275,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   isDarkMode 
                     ? 'text-white' 
                     : 'text-slate-800'
-                }`}>Redes Sociais</CardTitle>
+                }`}>{t("Redes Sociais")}</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-2 gap-4">

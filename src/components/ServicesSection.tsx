@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
@@ -16,6 +17,7 @@ interface ServicesSectionProps {
 }
 
 const ServicesSection = ({ isDarkMode }: ServicesSectionProps) => {
+  const { t } = useLanguage();
   const services = [
     {
       title: "Solução Personalizada",
@@ -66,23 +68,19 @@ const ServicesSection = ({ isDarkMode }: ServicesSectionProps) => {
           isDarkMode 
             ? 'text-white' 
             : 'text-slate-800'
-        }`}>
-          Serviços
-        </h2>
+        }`}>{t("Serviços")}</h2>
         <p className={`text-center mb-16 max-w-2xl mx-auto text-lg transition-colors duration-300 ${
           isDarkMode 
             ? 'text-gray-400' 
             : 'text-slate-600'
-        }`}>
-          Ofereço soluções completas de desenvolvimento web para transformar sua visão digital em realidade
-        </p>
+        }`}>{t("Ofereço soluções completas de desenvolvimento web para transformar sua visão digital em realidade")}</p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <Card 
-                key={service.title} 
+              <Card id={`service-${index}`} data-search-item={t(service.title)}
+                key={service.title}
                 className={`hover:transform hover:scale-105 transition-all duration-300 group ${
                   isDarkMode 
                     ? 'bg-slate-800/80 border-slate-700 hover:border-blue-500/50' 
@@ -100,7 +98,7 @@ const ServicesSection = ({ isDarkMode }: ServicesSectionProps) => {
                     isDarkMode 
                       ? 'text-white' 
                       : 'text-slate-800'
-                  }`}>{service.title}</CardTitle>
+                  }`}>{t(service.title)}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className={`text-sm leading-relaxed transition-colors duration-300 ${
@@ -108,7 +106,7 @@ const ServicesSection = ({ isDarkMode }: ServicesSectionProps) => {
                       ? 'text-gray-300' 
                       : 'text-slate-600'
                   }`}>
-                    {service.description}
+                    {t(service.description)}
                   </CardDescription>
                 </CardContent>
               </Card>

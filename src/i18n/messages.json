@@ -1,0 +1,474 @@
+{
+  "Desenvolvedor Full Stack | Front-End & Back-End": [
+    "Full Stack Developer | Front-End & Back-End",
+    "Desarrollador Full Stack | Front-End & Back-End"
+  ],
+  "Seja bem-vindo ao meu site! Meu nome é Gabriel e sou Desenvolvedor Full Stack apaixonado por transformar ideias em soluções digitais de alto impacto.": [
+    "Welcome to my website! I'm Gabriel, a Full Stack Developer passionate about turning ideas into high-impact digital solutions.",
+    "¡Bienvenido a mi sitio! Soy Gabriel, desarrollador Full Stack apasionado por transformar ideas en soluciones digitales de alto impacto."
+  ],
+  "Vamos construir algo juntos?": [
+    "Shall we build something together?",
+    "¿Creamos algo juntos?"
+  ],
+  "Fale comigo": [
+    "Let's talk",
+    "Hablemos"
+  ],
+  "Baixar currículo": [
+    "Download résumé",
+    "Descargar currículum"
+  ],
+  "Sobre Mim": [
+    "About Me",
+    "Sobre mí"
+  ],
+  "Programação e desenvolvimento": [
+    "Programming and development",
+    "Programación y desarrollo"
+  ],
+  "Nascido em Recife - PE, ao longo de 4 anos de experiência, busco estar sempre à frente das tendências tecnológicas, criando soluções escaláveis e impactantes para clientes e empresas de diversos setores.": [
+    "Born in Recife, Brazil, I have 4 years of experience and strive to stay ahead of technology trends, creating scalable, impactful solutions for clients and businesses across industries.",
+    "Nacido en Recife, Brasil, cuento con 4 años de experiencia y busco estar a la vanguardia de las tendencias tecnológicas, creando soluciones escalables y de impacto para clientes y empresas de diversos sectores."
+  ],
+  "Acredito no poder da tecnologia para simplificar processos e abrir novas oportunidades. Meu propósito é usar minhas habilidades para resolver problemas reais e criar valor duradouro.": [
+    "I believe in technology's power to simplify processes and open up new opportunities. My purpose is to use my skills to solve real problems and create lasting value.",
+    "Creo en el poder de la tecnología para simplificar procesos y abrir nuevas oportunidades. Mi propósito es utilizar mis habilidades para resolver problemas reales y crear valor duradero."
+  ],
+  "Valorizo a criatividade, o compromisso com resultados e a busca constante por aprendizado. Esses princípios guiam meu trabalho e minhas decisões.": [
+    "I value creativity, commitment to results, and continuous learning. These principles guide my work and my decisions.",
+    "Valoro la creatividad, el compromiso con los resultados y el aprendizaje continuo. Estos principios guían mi trabajo y mis decisiones."
+  ],
+  "Linguagens": [
+    "Technologies",
+    "Tecnologías"
+  ],
+  "Experiência": [
+    "Experience",
+    "Experiencia"
+  ],
+  "Formação": [
+    "Education",
+    "Formación"
+  ],
+  "Complementar": [
+    "Additional",
+    "Complementaria"
+  ],
+  "Solução Personalizada": [
+    "Custom Solutions",
+    "Soluciones a medida"
+  ],
+  "Criação de sites e/ou aplicações dinâmicas e modernas para empresas, portfólios, blogs e e-commerces, seja qual for o nicho ou a proposta do projeto.": [
+    "Modern, dynamic websites and applications for businesses, portfolios, blogs, and online stores, tailored to any industry or project.",
+    "Creación de sitios y aplicaciones dinámicas y modernas para empresas, portfolios, blogs y tiendas online, adaptados a cualquier sector o proyecto."
+  ],
+  "Identidade Visual": [
+    "Visual Identity",
+    "Identidad visual"
+  ],
+  "Layouts e conceitos visuais estratégicos. Se ainda não houver uma identidade visual definida, criamos esboços e sugestões personalizadas para o projeto.": [
+    "Strategic layouts and visual concepts. If you don't have a defined visual identity yet, I create sketches and tailored suggestions for your project.",
+    "Diseños y conceptos visuales estratégicos. Si aún no tienes una identidad visual definida, creo bocetos y propuestas personalizadas para tu proyecto."
+  ],
+  "Responsividade": [
+    "Responsive Design",
+    "Diseño adaptable"
+  ],
+  "Sites e sistemas que se adaptam perfeitamente a qualquer dispositivo, garantindo uma experiência impecável em desktops, tablets e smartphones.": [
+    "Websites and systems that adapt seamlessly to any device, delivering a smooth experience on desktops, tablets, and smartphones.",
+    "Sitios y sistemas que se adaptan a cualquier dispositivo, ofreciendo una experiencia impecable en ordenadores, tabletas y móviles."
+  ],
+  "Melhoria e Desempenho": [
+    "Optimization & Performance",
+    "Mejoras y rendimiento"
+  ],
+  "Atualizações regulares, ajustes de desempenho e melhorias para garantir velocidade e segurança, tal qual implementação de SEO técnico e boas práticas.": [
+    "Regular updates, performance tuning, and improvements for speed and security, including technical SEO and best practices.",
+    "Actualizaciones periódicas, ajustes de rendimiento y mejoras para garantizar velocidad y seguridad, incluyendo SEO técnico y buenas prácticas."
+  ],
+  "Planejamento Digital": [
+    "Digital Planning",
+    "Planificación digital"
+  ],
+  "Análise e planejamento estratégico para otimizar seu site ou sistema digital.": [
+    "Analysis and strategic planning to optimize your website or digital system.",
+    "Análisis y planificación estratégica para optimizar tu sitio o sistema digital."
+  ],
+  "Agilidade e Eficiência": [
+    "Agility & Efficiency",
+    "Agilidad y eficiencia"
+  ],
+  "Soluções rápidas e otimizadas, com foco em entregar resultados sem comprometer a qualidade.": [
+    "Fast, optimized solutions focused on delivering results without compromising quality.",
+    "Soluciones rápidas y optimizadas, centradas en ofrecer resultados sin comprometer la calidad."
+  ],
+  "Painéis Administrativos": [
+    "Admin Dashboards",
+    "Paneles de administración"
+  ],
+  "Dashboards e sistemas de gestão personalizados, com visual claro e intuitivo, para facilitar a tomada de decisões e otimizar a operação do seu negócio.": [
+    "Custom dashboards and management systems with clear, intuitive interfaces to support decisions and streamline your business operations.",
+    "Paneles y sistemas de gestión personalizados, con interfaces claras e intuitivas, para facilitar decisiones y optimizar las operaciones de tu negocio."
+  ],
+  "Integração com APIs": [
+    "API Integration",
+    "Integración con APIs"
+  ],
+  "Integração completa com APIs e serviços externos para expandir as funcionalidades da sua aplicação de forma inteligente e segura.": [
+    "Full integration with APIs and external services to expand your application's capabilities intelligently and securely.",
+    "Integración completa con APIs y servicios externos para ampliar las funcionalidades de tu aplicación de forma inteligente y segura."
+  ],
+  "Serviços": [
+    "Services",
+    "Servicios"
+  ],
+  "Ofereço soluções completas de desenvolvimento web para transformar sua visão digital em realidade": [
+    "Complete web development solutions to bring your digital vision to life",
+    "Soluciones completas de desarrollo web para hacer realidad tu visión digital"
+  ],
+  "Site Institucional com Blog": [
+    "Business Website with Blog",
+    "Sitio corporativo con blog"
+  ],
+  "Site institucional moderno e responsivo, com blog dinâmico para postagens e aplicação de monitoramento do estoque (gestão das importações).": [
+    "A modern, responsive business website with a dynamic blog and an inventory monitoring application for import management.",
+    "Sitio corporativo moderno y adaptable, con blog dinámico y aplicación de seguimiento de inventario para la gestión de importaciones."
+  ],
+  "Plataforma E-commerce": [
+    "E-commerce Platform",
+    "Plataforma de comercio electrónico"
+  ],
+  "Loja Virtual completa e funcional, com integração de checkout de pagamento, cadastro/login, cálculo automático de frete, cadastro de produtos, divisão por categorias e gestão de estoque.": [
+    "A complete online store with payment checkout, registration and login, automatic shipping calculation, product listings, categories, and inventory management.",
+    "Tienda online completa con pasarela de pago, registro e inicio de sesión, cálculo automático de envío, catálogo de productos, categorías y gestión de inventario."
+  ],
+  "Site institucional moderno e responsivo, com blog dinâmico para postagens, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.": [
+    "A modern, responsive business website with a dynamic blog, user registration and login, a restricted area with access control, and a full content administration panel.",
+    "Sitio corporativo moderno y adaptable con blog dinámico, registro e inicio de sesión, área privada con control de acceso y panel completo de gestión de contenidos."
+  ],
+  "Marketplace de Relógios de Luxo": [
+    "Luxury Watch Marketplace",
+    "Marketplace de relojes de lujo"
+  ],
+  "Marketplace completo, moderno e funcional, com integração de checkout de pagamento, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.": [
+    "A complete, modern marketplace with payment checkout, user registration and login, a restricted area with access control, and a full content administration panel.",
+    "Marketplace completo y moderno con pasarela de pago, registro e inicio de sesión, área privada con control de acceso y panel completo de gestión de contenidos."
+  ],
+  "Portal de Notícias": [
+    "News Portal",
+    "Portal de noticias"
+  ],
+  "Portal de notícias, com carrossel de notícias e controle de posts e área de membros.": [
+    "A news portal with a news carousel, post management, and a members' area.",
+    "Portal de noticias con carrusel, gestión de publicaciones y área de miembros."
+  ],
+  "Site Institucional com Aplicação": [
+    "Business Website with Application",
+    "Sitio corporativo con aplicación"
+  ],
+  "Site Institucional com aplicação de monitoramento do estoque (gestão das importações).": [
+    "A business website with an inventory monitoring application for import management.",
+    "Sitio corporativo con aplicación de seguimiento de inventario para la gestión de importaciones."
+  ],
+  "Site Institucional com blog, e controle de publicações, separados por categorias.": [
+    "A business website with a blog and category-based publishing management.",
+    "Sitio corporativo con blog y gestión de publicaciones por categorías."
+  ],
+  "Portfólio Profissional": [
+    "Professional Portfolio",
+    "Portfolio profesional"
+  ],
+  "Portfólio profissional com listagem de serviços e projetos já realizados. Foco em performance e credibilidade, visando captação de novos clientes.": [
+    "A professional portfolio showcasing services and completed projects, focused on performance and credibility to attract new clients.",
+    "Portfolio profesional con servicios y proyectos realizados, centrado en el rendimiento y la credibilidad para captar nuevos clientes."
+  ],
+  "Site Institucional": [
+    "Business Website",
+    "Sitio corporativo"
+  ],
+  "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.": [
+    "Business landing pages designed to highlight your company's strengths, establish authority, and attract new opportunities, with a focus on performance and credibility.",
+    "Landing pages corporativas diseñadas para destacar los puntos fuertes de tu empresa, generar autoridad y atraer nuevas oportunidades, con foco en rendimiento y credibilidad."
+  ],
+  "Landing Page Profissional": [
+    "Professional Landing Page",
+    "Landing page profesional"
+  ],
+  "Landing page profissional que une design moderno, boa usabilidade e comunicação eficiente para apresentação da profissional.": [
+    "A professional landing page combining modern design, usability, and effective communication to showcase the professional's work.",
+    "Landing page profesional que combina diseño moderno, buena usabilidad y comunicación eficaz para presentar a la profesional."
+  ],
+  "Plataforma de Gestão": [
+    "Management Platform",
+    "Plataforma de gestión"
+  ],
+  "Plataforma full-stack para gestão de outorgas de recursos hídricos, com fluxo multi-etapas, validações de negócio, georreferenciamento, geração de documentos e monitoramento operacional.": [
+    "A full-stack platform for managing water-use permits, featuring multi-step workflows, business validations, georeferencing, document generation, and operational monitoring.",
+    "Plataforma full-stack para gestionar autorizaciones de uso de recursos hídricos, con flujos de varias etapas, validaciones de negocio, georreferenciación, generación de documentos y seguimiento operativo."
+  ],
+  "Portfolio": [
+    "Portfolio",
+    "Portfolio"
+  ],
+  "Alguns dos projetos que desenvolvi e as tecnologias utilizadas para resolver problemas reais": [
+    "Selected projects and the technologies I used to solve real problems",
+    "Algunos de mis proyectos y las tecnologías utilizadas para resolver problemas reales"
+  ],
+  "Visualizar": [
+    "View project",
+    "Ver proyecto"
+  ],
+  "Vamos trabalhar juntos!": [
+    "Let's work together!",
+    "¡Trabajemos juntos!"
+  ],
+  "Tem um projeto em mente ou quer trocar uma ideia? Entre em contato e vamos falar isso!": [
+    "Have a project in mind or want to exchange ideas? Get in touch and let's talk!",
+    "¿Tienes un proyecto en mente o quieres intercambiar ideas? ¡Ponte en contacto y hablemos!"
+  ],
+  "Envie uma mensagem": [
+    "Send a message",
+    "Envía un mensaje"
+  ],
+  "Seu nome": [
+    "Your name",
+    "Tu nombre"
+  ],
+  "Seu email": [
+    "Your email",
+    "Tu correo electrónico"
+  ],
+  "Seu celular": [
+    "Your phone number",
+    "Tu móvil"
+  ],
+  "Sua mensagem": [
+    "Your message",
+    "Tu mensaje"
+  ],
+  "Enviar": [
+    "Send",
+    "Enviar"
+  ],
+  "Entre em contato": [
+    "Get in touch",
+    "Contacta conmigo"
+  ],
+  "Estou disponível para conversas rápidas e projetos. Ligue ou envie uma mensagem no WhatsApp! Ou se preferir algo mais formal? Envie um e-mail e responderei o mais rápido possível.": [
+    "I'm available for quick chats and projects. Call or message me on WhatsApp! Prefer something more formal? Send me an email and I'll reply as soon as possible.",
+    "Estoy disponible para charlas y proyectos. ¡Llámame o escríbeme por WhatsApp! ¿Prefieres algo más formal? Envíame un correo y responderé lo antes posible."
+  ],
+  "Recife, PE - Brazil": [
+    "Recife, PE - Brazil",
+    "Recife, PE - Brasil"
+  ],
+  "Redes Sociais": [
+    "Social Media",
+    "Redes sociales"
+  ],
+  "Experiência Profissional": [
+    "Professional Experience",
+    "Experiencia profesional"
+  ],
+  "GRADUAÇÃO (CIÊNCIA DA COMPUTAÇÃO)": [
+    "BACHELOR'S DEGREE (COMPUTER SCIENCE)",
+    "GRADO EN CIENCIAS DE LA COMPUTACIÓN"
+  ],
+  "Cursando - Início em 08/2022 (8º Período)": [
+    "In progress — Started 08/2022 (8th semester)",
+    "En curso — Inicio en 08/2022 (8.º semestre)"
+  ],
+  "Concluído": [
+    "Completed",
+    "Completado"
+  ],
+  "Cursos e Projetos": [
+    "Courses & Projects",
+    "Cursos y proyectos"
+  ],
+  "Projetos": [
+    "Projects",
+    "Proyectos"
+  ],
+  "Cursos": [
+    "Courses",
+    "Cursos"
+  ],
+  "Ferramentas e Outros": [
+    "Tools & More",
+    "Herramientas y otros"
+  ],
+  "Home": [
+    "Home",
+    "Inicio"
+  ],
+  "Sobre": [
+    "About",
+    "Sobre mí"
+  ],
+  "Contato": [
+    "Contact",
+    "Contacto"
+  ],
+  "Pesquisar no site": [
+    "Search this site",
+    "Buscar en el sitio"
+  ],
+  "Buscar projetos, tecnologias ou seções…": [
+    "Search projects, technologies or sections…",
+    "Busca proyectos, tecnologías o secciones…"
+  ],
+  "Nenhum resultado encontrado. Tente outro termo.": [
+    "No results found. Try another search.",
+    "No hay resultados. Prueba otro término."
+  ],
+  "Navegação": [
+    "Navigation",
+    "Navegación"
+  ],
+  "Idioma": [
+    "Language",
+    "Idioma"
+  ],
+  "Alternar tema": [
+    "Toggle theme",
+    "Cambiar tema"
+  ],
+  "Abrir menu": [
+    "Open menu",
+    "Abrir menú"
+  ],
+  "Fechar": [
+    "Close",
+    "Cerrar"
+  ],
+  "Nome": [
+    "Name",
+    "Nombre"
+  ],
+  "Celular": [
+    "Phone",
+    "Móvil"
+  ],
+  "Mensagem": [
+    "Message",
+    "Mensaje"
+  ],
+  "Contato de": [
+    "Message from",
+    "Mensaje de"
+  ],
+  "Página não encontrada": [
+    "Page not found",
+    "Página no encontrada"
+  ],
+  "Voltar ao início": [
+    "Return home",
+    "Volver al inicio"
+  ],
+  "Desenvolvedor Back-End Pleno": [
+    "Mid-level Back-End Developer",
+    "Desarrollador Back-End intermedio"
+  ],
+  "Desenvolvedor Front-End Jr": [
+    "Junior Front-End Developer",
+    "Desarrollador Front-End júnior"
+  ],
+  "08/2025 - Presente": [
+    "08/2025 - Present",
+    "08/2025 - Actualidad"
+  ],
+  "05/2025 - Presente": [
+    "05/2025 - Present",
+    "05/2025 - Actualidad"
+  ],
+  "2022 - Presente": [
+    "2022 - Present",
+    "2022 - Actualidad"
+  ],
+  "Desenvolvedor Freelancer": [
+    "Freelance Developer",
+    "Desarrollador freelance"
+  ],
+  "Criação de Sites e Aplicações Personalizadas": [
+    "Custom Website and Application Development",
+    "Desarrollo de sitios y aplicaciones a medida"
+  ],
+  "GepMed (Estágio)": [
+    "GepMed (Internship)",
+    "GepMed (Prácticas)"
+  ],
+  "Agilité Assessoria Contábil (Estágio)": [
+    "Agilité Assessoria Contábil (Internship)",
+    "Agilité Assessoria Contábil (Prácticas)"
+  ],
+  "Desenvolvedor Full Stack e Gestor de Dados": [
+    "Full Stack Developer and Data Manager",
+    "Desarrollador Full Stack y gestor de datos"
+  ],
+  "Analista de Dados": [
+    "Data Analyst",
+    "Analista de datos"
+  ],
+  "Plataforma para gestão de outorgas de recursos hídricos e monitoramento operacional. - Projeto de Pesquisa para a UFAL": [
+    "Water-use permit management and operational monitoring platform — UFAL research project",
+    "Plataforma de gestión de autorizaciones de recursos hídricos y seguimiento operativo — Proyecto de investigación para UFAL"
+  ],
+  "Sistema de Cadastro de Eventos e Usuários - Projeto Profissional": [
+    "Event and User Registration System — Professional Project",
+    "Sistema de registro de eventos y usuarios — Proyecto profesional"
+  ],
+  "Sistema de Intermediação na Vendas de Bebidas - Faculdade": [
+    "Beverage Sales Brokerage System — University Project",
+    "Sistema de intermediación de venta de bebidas — Proyecto universitario"
+  ],
+  "Loja Virtual com Integração de Banco de Dados - Faculdade": [
+    "Online Store with Database Integration — University Project",
+    "Tienda online con integración de base de datos — Proyecto universitario"
+  ],
+  "Aplicação Web de Gestão de Passagens Aéreas - Faculdade": [
+    "Flight Ticket Management Web App — University Project",
+    "Aplicación web de gestión de billetes de avión — Proyecto universitario"
+  ],
+  "Lógica de Programação e Algoritmos - UDEMY": [
+    "Programming Logic and Algorithms - UDEMY",
+    "Lógica de programación y algoritmos - UDEMY"
+  ],
+  "HTML e CSS - ALURA": [
+    "HTML and CSS - ALURA",
+    "HTML y CSS - ALURA"
+  ],
+  "Javascript do básico ao avançado - UDEMY": [
+    "JavaScript: Beginner to Advanced - UDEMY",
+    "JavaScript de básico a avanzado - UDEMY"
+  ],
+  "GO (GoLang) - Do zero ao avançado - UDEMY": [
+    "Go (Golang): Beginner to Advanced - UDEMY",
+    "Go (Golang) de cero a avanzado - UDEMY"
+  ],
+  "Curso de Angular (v15+) Typescript - UDEMY": [
+    "Angular (v15+) TypeScript Course - UDEMY",
+    "Curso de Angular (v15+) TypeScript - UDEMY"
+  ],
+  "API RESTfull com Spring Boot - UDEMY": [
+    "RESTful API with Spring Boot - UDEMY",
+    "API RESTful con Spring Boot - UDEMY"
+  ],
+  "SQL para Análise de Dados - UDEMY": [
+    "SQL for Data Analysis - UDEMY",
+    "SQL para análisis de datos - UDEMY"
+  ],
+  "Git e Github - ALURA": [
+    "Git and GitHub - ALURA",
+    "Git y GitHub - ALURA"
+  ],
+  "Curso Completo de Power BI - HASHTAG": [
+    "Complete Power BI Course - HASHTAG",
+    "Curso completo de Power BI - HASHTAG"
+  ],
+  "Monitoria Java e Python - MONITORIA NEXT": [
+    "Java and Python Tutoring - MONITORIA NEXT",
+    "Tutoría de Java y Python - MONITORIA NEXT"
+  ]
+}

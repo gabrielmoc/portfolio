@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import { courses, projects } from "@/data/aboutData";
 
@@ -6,20 +7,21 @@ interface ComplementaryTabProps {
 }
 
 const ComplementaryTab = ({ isDarkMode }: ComplementaryTabProps) => {
+  const { t } = useLanguage();
   return (
     <div className="space-y-4">
       <h3 className={`text-lg font-semibold mb-4 transition-colors duration-300 ${
         isDarkMode 
           ? 'text-blue-400' 
           : 'text-blue-700'
-      }`}>Cursos e Projetos</h3>
+      }`}>{t("Cursos e Projetos")}</h3>
       <div className="space-y-3">
         <div>
           <h4 className={`font-medium mb-2 transition-colors duration-300 ${
             isDarkMode 
               ? 'text-white' 
               : 'text-slate-800'
-          }`}>Projetos</h4>
+          }`}>{t("Projetos")}</h4>
           {projects.map((project, index) => (
             <div 
               key={index}
@@ -29,7 +31,7 @@ const ComplementaryTab = ({ isDarkMode }: ComplementaryTabProps) => {
                   : 'bg-slate-50 text-slate-600'
               }`}
             >
-              {project}
+              {t(project)}
             </div>
           ))}
         </div>
@@ -38,7 +40,7 @@ const ComplementaryTab = ({ isDarkMode }: ComplementaryTabProps) => {
             isDarkMode 
               ? 'text-white' 
               : 'text-slate-800'
-          }`}>Cursos</h4>
+          }`}>{t("Cursos")}</h4>
           {courses.map((course, index) => (
             <div 
               key={index}
@@ -48,7 +50,7 @@ const ComplementaryTab = ({ isDarkMode }: ComplementaryTabProps) => {
                   : 'bg-slate-50 text-slate-600'
               }`}
             >
-              {course}
+              {t(course)}
             </div>
           ))}
         </div>

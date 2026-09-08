@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import TechIcon from "./TechIcon";
 import { frontEndTechs, backEndTechs, toolsTechs } from "@/data/aboutData";
@@ -8,6 +9,7 @@ interface TechSkillsTabProps {
 }
 
 const TechSkillsTab = ({ isDarkMode }: TechSkillsTabProps) => {
+  const { t } = useLanguage();
   return (
     <div className="space-y-6">
       <div>
@@ -69,7 +71,7 @@ const TechSkillsTab = ({ isDarkMode }: TechSkillsTabProps) => {
           isDarkMode 
             ? 'text-blue-400' 
             : 'text-blue-700'
-        }`}>Ferramentas e Outros</h4>
+        }`}>{t("Ferramentas e Outros")}</h4>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {toolsTechs.map((tech) => (
             <div 

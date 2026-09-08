@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import { Progress } from "@/components/ui/progress";
 
@@ -6,13 +7,14 @@ interface EducationTabProps {
 }
 
 const EducationTab = ({ isDarkMode }: EducationTabProps) => {
+  const { t } = useLanguage();
   return (
     <div className="space-y-4">
       <h3 className={`text-lg font-semibold mb-4 transition-colors duration-300 ${
         isDarkMode 
           ? 'text-blue-400' 
           : 'text-blue-700'
-      }`}>Formação</h3>
+      }`}>{t("Formação")}</h3>
       <div className={`rounded-lg p-4 transition-colors duration-300 ${
         isDarkMode 
           ? 'bg-slate-700/50' 
@@ -22,7 +24,7 @@ const EducationTab = ({ isDarkMode }: EducationTabProps) => {
           isDarkMode 
             ? 'text-white' 
             : 'text-slate-800'
-        }`}>GRADUAÇÃO (CIÊNCIA DA COMPUTAÇÃO)</h4>
+        }`}>{t("GRADUAÇÃO (CIÊNCIA DA COMPUTAÇÃO)")}</h4>
         <p className={`text-sm mb-2 transition-colors duration-300 ${
           isDarkMode 
             ? 'text-blue-400' 
@@ -32,10 +34,10 @@ const EducationTab = ({ isDarkMode }: EducationTabProps) => {
           isDarkMode 
             ? 'text-gray-400' 
             : 'text-slate-500'
-        }`}>Cursando - Início em 08/2022 (8º Período)</p>
+        }`}>{t("Cursando - Início em 08/2022 (8º Período)")}</p>
         <div className="space-y-2">
           <div className="flex justify-between text-sm">
-            <span className={isDarkMode ? 'text-gray-300' : 'text-slate-600'}>Concluído</span>
+            <span className={isDarkMode ? 'text-gray-300' : 'text-slate-600'}>{t("Concluído")}</span>
             <span className={isDarkMode ? 'text-gray-300' : 'text-slate-600'}>99%</span>
           </div>
           <Progress 

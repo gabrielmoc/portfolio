@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import { experiences } from "@/data/aboutData";
 
@@ -6,13 +7,14 @@ interface ExperienceTabProps {
 }
 
 const ExperienceTab = ({ isDarkMode }: ExperienceTabProps) => {
+  const { t } = useLanguage();
   return (
     <div className="space-y-4">
       <h3 className={`text-lg font-semibold mb-4 transition-colors duration-300 ${
         isDarkMode 
           ? 'text-blue-400' 
           : 'text-blue-700'
-      }`}>Experiência Profissional</h3>
+      }`}>{t("Experiência Profissional")}</h3>
       <div className="space-y-4">
         {experiences.map((exp, index) => (
           <div 
@@ -27,17 +29,17 @@ const ExperienceTab = ({ isDarkMode }: ExperienceTabProps) => {
               isDarkMode 
                 ? 'text-white' 
                 : 'text-slate-800'
-            }`}>{exp.company}</h4>
+            }`}>{t(exp.company)}</h4>
             <p className={`text-sm transition-colors duration-300 ${
               isDarkMode 
                 ? 'text-blue-400' 
                 : 'text-blue-700'
-            }`}>{exp.position}</p>
+            }`}>{t(exp.position)}</p>
             <p className={`text-sm transition-colors duration-300 ${
               isDarkMode 
                 ? 'text-gray-400' 
                 : 'text-slate-500'
-            }`}>{exp.period}</p>
+            }`}>{t(exp.period)}</p>
           </div>
         ))}
       </div>

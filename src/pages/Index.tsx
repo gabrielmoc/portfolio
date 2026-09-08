@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
 import AboutSection from "@/components/AboutSection";
@@ -10,9 +10,11 @@ import ContactSection from "@/components/ContactSection";
 const Index = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
+  useEffect(() => { document.documentElement.classList.toggle('dark', isDarkMode); }, [isDarkMode]);
+
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark');
+
   };
 
   return (

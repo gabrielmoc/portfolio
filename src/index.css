@@ -101,3 +101,13 @@
     @apply bg-background text-foreground;
   }
 }
+section[id], [data-search-item] { scroll-margin-top: 88px; }
+.hero-glow { position: absolute; width: 65%; height: 70%; left: 18%; top: 5%; background: radial-gradient(ellipse, rgb(59 130 246 / .13), transparent 65%); animation: hero-drift 16s ease-in-out infinite alternate; }
+.hero-content { animation: hero-enter .9s ease-out both; }
+.hero-wave { display: inline-block; transform-origin: 75% 75%; animation: hero-wave 5s ease-in-out infinite; }
+@keyframes hero-drift { from { transform: translate(-12%, -4%) scale(.9); } to { transform: translate(16%, 12%) scale(1.2); } }
+@keyframes hero-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes hero-wave { 0%, 65%, 100% { transform: rotate(0); } 70%, 80% { transform: rotate(18deg); } 75%, 85% { transform: rotate(-10deg); } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}

@@ -1,3 +1,4 @@
+import { useLanguage } from "@/i18n/LanguageProvider";
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -24,6 +25,7 @@ interface PortfolioSectionProps {
 }
 
 const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
+  const { t } = useLanguage();
   const projects = [
     {
       title: "Site Institucional com Blog",
@@ -150,20 +152,16 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
           isDarkMode 
             ? 'text-white' 
             : 'text-slate-800'
-        }`}>
-          Portfolio
-        </h2>
+        }`}>{t("Portfolio")}</h2>
         <p className={`text-center mb-16 max-w-2xl mx-auto text-lg transition-colors duration-300 ${
           isDarkMode 
             ? 'text-gray-400' 
             : 'text-slate-600'
-        }`}>
-          Alguns dos projetos que desenvolvi e as tecnologias utilizadas para resolver problemas reais
-        </p>
+        }`}>{t("Alguns dos projetos que desenvolvi e as tecnologias utilizadas para resolver problemas reais")}</p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card 
+            <Card id={`project-${index}`} data-search-item={t(project.title)}
               key={project.title + index} 
               className={`overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group ${
                 isDarkMode 
@@ -175,7 +173,7 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
               <div className="aspect-video overflow-hidden">
                 <img 
                   src={project.image} 
-                  alt={project.title}
+                  alt={t(project.title)}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
@@ -184,13 +182,13 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
                   isDarkMode 
                     ? 'text-white' 
                     : 'text-slate-800'
-                }`}>{project.title}</CardTitle>
+                }`}>{t(project.title)}</CardTitle>
                 <CardDescription className={`text-sm leading-relaxed transition-colors duration-300 ${
                   isDarkMode 
                     ? 'text-gray-300' 
                     : 'text-slate-600'
                 }`}>
-                  {project.description}
+                  {t(project.description)}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -216,9 +214,7 @@ const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
                       : 'border-blue-500 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent'
                   }`}
                   onClick={() => window.open(project.link, '_blank')}
-                >
-                  Visualizar
-                </Button>
+                >{t("Visualizar")}</Button>
               </CardContent>
             </Card>
           ))}
