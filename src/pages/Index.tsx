@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -29,6 +30,7 @@ const Index = () => {
       <ServicesSection isDarkMode={isDarkMode} />
       <PortfolioSection isDarkMode={isDarkMode} />
       <ContactSection isDarkMode={isDarkMode} />
+      <Footer isDarkMode={isDarkMode} />
     </div>
   );
 };
