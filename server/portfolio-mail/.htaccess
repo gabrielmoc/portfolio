@@ -1,0 +1,2 @@
+# Defense in depth if this private directory is accidentally uploaded under public_html.
+Require all denied

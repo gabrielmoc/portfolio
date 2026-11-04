@@ -16,7 +16,7 @@
     "Hablemos"
   ],
   "Baixar currículo": [
-    "Download résumé",
+    "Download CV",
     "Descargar currículum"
   ],
   "Sobre Mim": [
@@ -223,9 +223,9 @@
     "Let's work together!",
     "¡Trabajemos juntos!"
   ],
-  "Tem um projeto em mente ou quer trocar uma ideia? Entre em contato e vamos falar isso!": [
-    "Have a project in mind or want to exchange ideas? Get in touch and let's talk!",
-    "¿Tienes un proyecto en mente o quieres intercambiar ideas? ¡Ponte en contacto y hablemos!"
+  "Tem um projeto em mente? Entre em contato e vamos falar isso!": [
+    "Have a project in mind? Get in touch and let's talk!",
+    "¿Tienes un proyecto en mente? ¡Ponte en contacto y hablemos!"
   ],
   "Envie uma mensagem": [
     "Send a message",
@@ -470,5 +470,185 @@
   "Monitoria Java e Python - MONITORIA NEXT": [
     "Java and Python Tutoring - MONITORIA NEXT",
     "Tutoría de Java y Python - MONITORIA NEXT"
+  ],
+  "Ver projetos": [
+    "View projects",
+    "Ver proyectos"
+  ],
+  "Desenvolvo aplicações completas, da interface às APIs e ao banco de dados. Transformo processos complexos em experiências simples.": [
+    "I build complete applications, from interfaces to APIs and databases. I turn complex processes into simple experiences.",
+    "Desarrollo aplicaciones completas, desde la interfaz hasta las APIs y la base de datos. Transformo procesos complejos en experiencias sencillas."
+  ],
+  "Aplicações, plataformas e experiências digitais. Explore os projetos e as tecnologias por trás de cada solução.": [
+    "Applications, platforms, and digital experiences. Explore the projects and the technologies behind each solution.",
+    "Aplicaciones, plataformas y experiencias digitales. Explora los proyectos y las tecnologías detrás de cada solución."
+  ],
+  "Projetos em destaque": [
+    "Featured projects",
+    "Proyectos destacados"
+  ],
+  "Destaque": [
+    "Featured",
+    "Destacado"
+  ],
+  "Detalhes técnicos": [
+    "Technical details",
+    "Detalles técnicos"
+  ],
+  "Tecnologias utilizadas": [
+    "Technologies used",
+    "Tecnologías utilizadas"
+  ],
+  "Abrir projeto": [
+    "Open project",
+    "Abrir proyecto"
+  ],
+  "Visitar": [
+    "Visit",
+    "Visitar"
+  ],
+  "APIs Externas": [
+    "External APIs",
+    "APIs externas"
+  ],
+  "Demonstração interativa": [
+    "Interactive demo",
+    "Demostración interactiva"
+  ],
+  "Da interface ao banco de dados": [
+    "From interface to database",
+    "De la interfaz a la base de datos"
+  ],
+  "Fluxo ilustrativo inspirado em uma solicitação do SIGA. Executado apenas neste navegador, sem acessar o sistema real ou salvar dados.": [
+    "Illustrative workflow inspired by a SIGA request. Runs only in this browser, without accessing the real system or saving data.",
+    "Flujo ilustrativo inspirado en una solicitud de SIGA. Se ejecuta solo en este navegador, sin acceder al sistema real ni guardar datos."
+  ],
+  "Escolha um cenário": [
+    "Choose a scenario",
+    "Elige un escenario"
+  ],
+  "Dados completos": [
+    "Complete data",
+    "Datos completos"
+  ],
+  "Campo obrigatório ausente": [
+    "Missing required field",
+    "Falta un campo obligatorio"
+  ],
+  "Etapas da solicitação": [
+    "Request stages",
+    "Etapas de la solicitud"
+  ],
+  "Interface": [
+    "Interface",
+    "Interfaz"
+  ],
+  "Banco de dados": [
+    "Database",
+    "Base de datos"
+  ],
+  "O formulário organiza as informações antes do envio.": [
+    "The form organizes information before submission.",
+    "El formulario organiza la información antes del envío."
+  ],
+  "A API verifica os campos obrigatórios antes de aceitar a solicitação.": [
+    "The API checks required fields before accepting the request.",
+    "La API comprueba los campos obligatorios antes de aceptar la solicitud."
+  ],
+  "Somente uma solicitação válida avança para a persistência.": [
+    "Only a valid request proceeds to storage.",
+    "Solo una solicitud válida pasa al almacenamiento."
+  ],
+  "Pronto para enviar uma solicitação de exemplo.": [
+    "Ready to submit a sample request.",
+    "Listo para enviar una solicitud de ejemplo."
+  ],
+  "Solicitação recebida. A próxima etapa valida os dados.": [
+    "Request received. The next step validates the data.",
+    "Solicitud recibida. La siguiente etapa valida los datos."
+  ],
+  "A validação recusou o envio. Nenhum registro foi criado. Corrija o cenário e tente novamente.": [
+    "Validation rejected the submission. No record was created. Fix the scenario and try again.",
+    "La validación rechazó el envío. No se creó ningún registro. Corrige el escenario e inténtalo de nuevo."
+  ],
+  "Validação concluída. Registro simulado criado e confirmação devolvida à interface.": [
+    "Validation complete. A simulated record was created and confirmation returned to the interface.",
+    "Validación completada. Registro simulado creado y confirmación devuelta a la interfaz."
+  ],
+  "Enviar exemplo": [
+    "Send example",
+    "Enviar ejemplo"
+  ],
+  "Validar solicitação": [
+    "Validate request",
+    "Validar solicitud"
+  ],
+  "Fluxo concluído": [
+    "Flow complete",
+    "Flujo completado"
+  ],
+  "Reiniciar": [
+    "Reset",
+    "Reiniciar"
+  ],
+  "Desafio": [
+    "Challenge",
+    "Desafío"
+  ],
+  "Estrutura da solução": [
+    "Solution structure",
+    "Estructura de la solución"
+  ],
+  "Organizar a gestão de outorgas de recursos hídricos em um fluxo com múltiplas etapas e regras de negócio.": [
+    "Organize water-use permit management into a workflow with multiple stages and business rules.",
+    "Organizar la gestión de autorizaciones de recursos hídricos en un flujo con varias etapas y reglas de negocio."
+  ],
+  "Interface em React, back-end em Django e PostgreSQL entre as tecnologias do projeto. O escopo inclui georreferenciamento, geração de documentos e monitoramento operacional.": [
+    "React interface, Django back end, and PostgreSQL among the project technologies. The scope includes georeferencing, document generation, and operational monitoring.",
+    "Interfaz en React, back-end en Django y PostgreSQL entre las tecnologías del proyecto. El alcance incluye georreferenciación, generación de documentos y seguimiento operativo."
+  ],
+  "Reunir conteúdo público, acesso de usuários e administração em um site institucional com blog.": [
+    "Bring public content, user access, and administration together in a business website with a blog.",
+    "Reunir contenido público, acceso de usuarios y administración en un sitio corporativo con blog."
+  ],
+  "React e Node.js compõem a stack com PostgreSQL e JWT. O projeto reúne cadastro e login, área restrita com controle de acesso e gerenciamento de conteúdo.": [
+    "React and Node.js form the stack alongside PostgreSQL and JWT. The project includes registration and login, a restricted area with access control, and content management.",
+    "React y Node.js componen la stack junto con PostgreSQL y JWT. El proyecto incluye registro e inicio de sesión, área privada con control de acceso y gestión de contenidos."
+  ],
+  "Combinar publicação de conteúdo com acompanhamento de estoque e importações em uma experiência integrada.": [
+    "Combine content publishing with inventory and import tracking in an integrated experience.",
+    "Combinar la publicación de contenido con el seguimiento de inventario e importaciones en una experiencia integrada."
+  ],
+  "React e Node compõem a stack informada, com blog e GTranslate. A solução reúne presença institucional, publicações dinâmicas e uma aplicação de monitoramento de estoque.": [
+    "The listed stack includes React and Node, with a blog and GTranslate. The solution combines a business presence, dynamic publishing, and an inventory monitoring application.",
+    "La stack indicada incluye React y Node, con blog y GTranslate. La solución reúne presencia corporativa, publicaciones dinámicas y una aplicación de seguimiento de inventario."
+  ],
+  "Site de conteúdo com publicações por categoria, apresentação de serviços e galeria de fotos.": [
+    "Content website with posts organized by category, service information, and a photo gallery.",
+    "Sitio de contenido con publicaciones por categoría, presentación de servicios y galería de fotos."
+  ],
+  "Enviando…": [
+    "Sending…",
+    "Enviando…"
+  ],
+  "Mensagem enviada! Obrigado pelo contato. Responderei em breve.": [
+    "Message sent! Thanks for reaching out. I will reply soon.",
+    "¡Mensaje enviado! Gracias por contactar. Responderé pronto."
+  ],
+  "Você enviou várias mensagens recentemente. Aguarde 15 minutos ou entre em contato pelo WhatsApp.": [
+    "You have sent several messages recently. Please wait 15 minutes or contact me on WhatsApp.",
+    "Has enviado varios mensajes recientemente. Espera 15 minutos o contacta conmigo por WhatsApp."
+  ],
+  "Confira os dados preenchidos. Nome, e-mail válido e mensagem são obrigatórios.": [
+    "Check your details. A name, valid email address, and message are required.",
+    "Revisa los datos. El nombre, un correo válido y el mensaje son obligatorios."
+  ],
+  "Não foi possível enviar agora. Seus dados foram mantidos. Tente novamente mais tarde ou use o WhatsApp.": [
+    "Unable to send right now. Your details have been kept. Try again later or use WhatsApp.",
+    "No se pudo enviar ahora. Tus datos se han conservado. Inténtalo más tarde o usa WhatsApp."
+  ],
+  "Não foi possível confirmar o envio. A mensagem pode ter sido recebida. Aguarde antes de tentar novamente ou fale comigo pelo WhatsApp.": [
+    "Unable to confirm delivery. Your message may have been received. Wait before trying again or contact me on WhatsApp.",
+    "No se pudo confirmar el envío. Es posible que se haya recibido el mensaje. Espera antes de volver a intentarlo o contacta conmigo por WhatsApp."
   ]
 }

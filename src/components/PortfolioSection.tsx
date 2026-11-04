@@ -1,227 +1,50 @@
-import { useLanguage } from "@/i18n/LanguageProvider";
+import { ArrowUpRight, Layers, Sparkles } from 'lucide-react';
+import { useLanguage } from '@/i18n/LanguageProvider';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { featuredDetails, portfolioProjects } from '@/data/portfolioProjects';
+import RequestDemo from './RequestDemo';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import cherry from "/uploads/cherry.jpeg";
-import avivia from "/uploads/avivia.jpeg";
-import marchef from "/uploads/marchef.jpeg";
-import ceustudio from "/uploads/ceustudio.jpeg";
-import migusmar from "/uploads/migusmar.jpeg";
-import portalbrasil from "/uploads/portal-brasil.jpeg";
-import jkaibrindes from "/uploads/jkaibrindes.png";
-import portfolio from "/uploads/portfolio.png";
-import triv from "/uploads/triv.jpeg";
-import psi from "/uploads/psi.png";
-import mkfretes from "/uploads/mkfretes.jpeg";
-import crcode from "/uploads/crcode.jpeg";
-import nobile from "/uploads/nobile.png";
-import lucasmiranda from  "/uploads/lucasmiranda.jpeg";
-import ceno from  "/uploads/ceno.jpeg";
-import siga from  "/uploads/siga.jpeg";
-import relato from "/uploads/relato.jpeg";
-
-interface PortfolioSectionProps {
-  isDarkMode: boolean;
-}
-
+interface PortfolioSectionProps { isDarkMode: boolean }
 const PortfolioSection = ({ isDarkMode }: PortfolioSectionProps) => {
   const { t } = useLanguage();
-  const projects = [
-    {
-      title: "Site Institucional com Blog",
-      description: "Site institucional moderno e responsivo, com blog dinâmico para postagens e aplicação de monitoramento do estoque (gestão das importações).",
-      tech: ["React", "Node", "Blog", "GTranslate"],
-      image: relato,
-      link: "https://relato-temporal-web.vercel.app/"
-    },
-    {
-      title: "Plataforma E-commerce",
-      description: "Loja Virtual completa e funcional, com integração de checkout de pagamento, cadastro/login, cálculo automático de frete, cadastro de produtos, divisão por categorias e gestão de estoque.",
-      tech: ["WordPress", "PostgreSQL", "APIs Externas", "HTML", "CSS", "JavaScript", "WooCommerce"],
-      image: cherry,
-      link: "https://cherryhomedecor.com.br/"
-    },
-    {
-      title: "Site Institucional com Blog",
-      description: "Site institucional moderno e responsivo, com blog dinâmico para postagens, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
-      tech: ["React", "Node.js", "PostgreSQL", "JWT"],
-      image: avivia,
-      link: "https://avivia-tau.vercel.app/"
-    },
-    {
-      title: "Marketplace de Relógios de Luxo",
-      description: "Marketplace completo, moderno e funcional, com integração de checkout de pagamento, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
-      tech: ["React", "Node.js", "PostgreSQL", "JWT", "Stripe"],
-      image: nobile,
-      link: "https://nobile-three.vercel.app/"
-    },
-    {
-      title: "Site Institucional com Blog",
-      description: "Site institucional moderno e responsivo, com blog dinâmico para postagens, sistema de cadastro e login de usuários, área restrita com controle de acesso e painel administrativo completo para gerenciamento de conteúdo.",
-      tech: ["WordPress", "Elementor", "PHP", "JavaScript"],
-      image: marchef,
-      link: "https://marchefpescados.com.br/"
-    },
-    {
-      title: "Portal de Notícias",
-      description: "Portal de notícias, com carrossel de notícias e controle de posts e área de membros.",
-      tech: ["Angular", "Go Lang", "TypeScript", "MySQL"],
-      image: lucasmiranda,
-      link: "https://reporterlucasmiranda.com.br/"
-    },
-    {
-      title: "Site Institucional com Aplicação",
-      description: "Site Institucional com aplicação de monitoramento do estoque (gestão das importações).",
-      tech: ["React", "Node", "Firebase", "PostgreSQL"],
-      image: migusmar,
-      link: "https://migusmar.com.br/"
-    },
-    {
-      title: "Site Institucional com Blog",
-      description: "Site Institucional com blog, e controle de publicações, separados por categorias.",
-      tech: ["WordPress", "Elementor", "PHP", "JavaScript"],
-      image: portalbrasil,
-      link: "https://portalbrasilofficial.com/"
-    },
-    {
-      title: "Plataforma E-commerce",
-      description: "Loja Virtual completa e funcional, com integração de checkout de pagamento, cadastro/login, cálculo automático de frete, cadastro de produtos, divisão por categorias e gestão de estoque.",
-      tech: ["WordPress", "PostgreSQL", "APIs Externas", "HTML", "CSS", "PHP", "JavaScript", "WooCommerce"],
-      image: jkaibrindes,
-      link: "https://jkaibrindes.com.br/"
-    },
-    {
-      title: "Portfólio Profissional",
-      description: "Portfólio profissional com listagem de serviços e projetos já realizados. Foco em performance e credibilidade, visando captação de novos clientes.",
-      tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: portfolio,
-      link: "https://gabrielcavalcanti.tech/"
-    },
-    {
-      title: "Site Institucional",
-      description: "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.",
-      tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: triv,
-      link: "https://agenciatriv.com.br/"
-    },
-    {
-      title: "Landing Page Profissional",
-      description: "Landing page profissional que une design moderno, boa usabilidade e comunicação eficiente para apresentação da profissional.",
-      tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: psi,
-      link: "https://psilucianaprazeres.netlify.app/"
-    },
-    {
-      title: "Landing Page Profissional",
-      description: "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.",
-      tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: mkfretes,
-      link: "https://mkfretesemudancas.com.br/"
-    },
-    {
-      title: "Landing Page Profissional",
-      description: "Landing pages institucionais pensadas para destacar os diferenciais da sua empresa, construir autoridade e atrair mais oportunidades de negócio. Foco em performance e credibilidade.",
-      tech: ["React", "HTML", "CSS", "JavaScript"],
-      image: crcode,
-      link: "https://crcode.com.br/"
-    },
-    {
-      title: "Site Institucional com Blog",
-      description: "Site Institucional com blog, e controle de publicações, separados por categorias.",
-      tech: ["React", "JavaScript", "GTranslate"],
-      image: ceno,
-      link: "https://cenolimited.com/"
-    },
-    {
-      title: "Plataforma de Gestão",
-      description: "Plataforma full-stack para gestão de outorgas de recursos hídricos, com fluxo multi-etapas, validações de negócio, georreferenciamento, geração de documentos e monitoramento operacional.",
-      tech: ["React", "JavaScript", "Typescript", "Vite", "Django", "JWT", "PostgreSQL", "Redis", "Gunicorn"],
-      image: siga,
-      link: "https://siga.igarn.rn.gov.br/"
-    }
-  ];
-
-  return (
-    <section id="portfolio" className={`py-20 px-4 transition-colors duration-300 ${
-      isDarkMode 
-        ? 'bg-slate-900/30' 
-        : 'bg-slate-50/50'
-    }`}>
-      <div className="container mx-auto">
-        <h2 className={`text-4xl md:text-5xl font-bold text-center mb-4 transition-colors duration-300 ${
-          isDarkMode 
-            ? 'text-white' 
-            : 'text-slate-800'
-        }`}>{t("Portfolio")}</h2>
-        <p className={`text-center mb-16 max-w-2xl mx-auto text-lg transition-colors duration-300 ${
-          isDarkMode 
-            ? 'text-gray-400' 
-            : 'text-slate-600'
-        }`}>{t("Alguns dos projetos que desenvolvi e as tecnologias utilizadas para resolver problemas reais")}</p>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <Card id={`project-${index}`} data-search-item={t(project.title)}
-              key={project.title + index} 
-              className={`overflow-hidden hover:transform hover:scale-105 transition-all duration-300 group ${
-                isDarkMode 
-                  ? 'bg-slate-800/80 border-slate-700 hover:border-blue-500/50' 
-                  : 'bg-white border-slate-200 hover:border-blue-500/50 hover:shadow-lg'
-              }`}
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="aspect-video overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={t(project.title)}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-              <CardHeader>
-                <CardTitle className={`text-lg transition-colors duration-300 ${
-                  isDarkMode 
-                    ? 'text-white' 
-                    : 'text-slate-800'
-                }`}>{t(project.title)}</CardTitle>
-                <CardDescription className={`text-sm leading-relaxed transition-colors duration-300 ${
-                  isDarkMode 
-                    ? 'text-gray-300' 
-                    : 'text-slate-600'
-                }`}>
-                  {t(project.description)}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {project.tech.map((tech) => (
-                    <span 
-                      key={tech}
-                      className={`text-xs px-2 py-1 rounded-full border transition-colors duration-300 ${
-                        isDarkMode 
-                          ? 'bg-blue-600/20 text-blue-300 border-blue-600/30' 
-                          : 'bg-blue-100 text-blue-700 border-blue-200'
-                      }`}
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <Button 
-                  variant="outline" 
-                  className={`w-full transition-all duration-300 ${
-                    isDarkMode 
-                      ? 'border-blue-600 text-blue-400 hover:bg-blue-600 hover:text-white bg-transparent' 
-                      : 'border-blue-500 text-blue-600 hover:bg-blue-600 hover:text-white bg-transparent'
-                  }`}
-                  onClick={() => window.open(project.link, '_blank')}
-                >{t("Visualizar")}</Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+  return <section id="portfolio" className={`py-20 px-4 transition-colors duration-300 ${isDarkMode ? 'bg-slate-900/30' : 'bg-slate-50/50'}`}>
+    <div className="container mx-auto">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">{t('Portfolio')}</h2>
+      <p className="text-center mb-12 max-w-2xl mx-auto text-lg text-muted-foreground">{t('Aplicações, plataformas e experiências digitais. Explore os projetos e as tecnologias por trás de cada solução.')}</p>
+      <div className="flex items-center gap-2 mb-6 text-sm font-medium text-blue-500"><Sparkles size={17} />{t('Projetos em destaque')}</div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {portfolioProjects.map((project, index) => <Card id={`project-${project.id}`} data-search-item={project.name} key={project.id} className={`flex flex-col overflow-hidden group transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${isDarkMode ? 'bg-slate-800/80 border-slate-700' : 'bg-white border-slate-200'} ${index < 3 ? 'ring-1 ring-blue-500/40' : ''}`}>
+          <div className="aspect-video overflow-hidden relative">
+            <img src={project.image} alt={project.name} loading="lazy" width={800} height={450} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            {index < 3 && <span className="absolute top-3 left-3 rounded-full bg-slate-950/90 text-white text-xs px-3 py-1.5 border border-blue-400/40">{String(index + 1).padStart(2, '0')} · {t('Destaque')}</span>}
+          </div>
+          <CardHeader>
+            <p className="text-xs font-medium text-blue-500">{t(project.title)}</p>
+            <CardTitle className="text-xl">{project.name}</CardTitle>
+            <CardDescription className={`text-sm leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-slate-600'}`}>{t(project.description)}</CardDescription>
+          </CardHeader>
+          <CardContent className="mt-auto">
+            <div className="flex flex-wrap gap-1.5 mb-5">{project.tech.map(tech => <span key={tech} className={`text-xs px-2 py-1 rounded-full border ${isDarkMode ? 'bg-blue-600/10 text-blue-300 border-blue-600/30' : 'bg-blue-50 text-blue-700 border-blue-200'}`}>{t(tech)}</span>)}</div>
+            <div className="flex flex-wrap gap-2">
+              <Dialog>
+                <DialogTrigger asChild><Button variant="outline" className="flex-1 border-blue-500/40 text-blue-500 bg-transparent hover:bg-blue-500/10"><Layers size={16} className="mr-2" />{t('Detalhes técnicos')}</Button></DialogTrigger>
+                <DialogContent className="w-[calc(100%_-_2rem)] max-w-3xl max-h-[85dvh] overflow-y-auto rounded-2xl p-5 sm:p-8">
+                  <div className="pr-6"><p className="text-xs font-medium uppercase tracking-widest text-blue-500 mb-2">{t(project.title)}</p><DialogTitle className="text-2xl sm:text-3xl">{project.name}</DialogTitle><DialogDescription className="mt-3 leading-relaxed">{t(project.description)}</DialogDescription></div>
+                  <img src={project.image} alt={project.name} loading="lazy" width={800} height={450} className="w-full aspect-video object-cover rounded-lg border" />
+                  {featuredDetails[project.id] && <div className="grid sm:grid-cols-2 gap-4">{[['Desafio', featuredDetails[project.id].challenge], ['Estrutura da solução', featuredDetails[project.id].structure]].map(([label, text]) => <div key={label} className="rounded-xl border p-4"><h4 className="font-semibold mb-2">{t(label)}</h4><p className="text-sm text-muted-foreground leading-relaxed">{t(text)}</p></div>)}</div>}
+                  {project.tech.length > 0 && <div><h4 className="font-semibold mb-3">{t('Tecnologias utilizadas')}</h4><div className="flex flex-wrap gap-2">{project.tech.map(tech => <span key={tech} className="rounded-md border bg-muted px-3 py-1.5 text-sm">{t(tech)}</span>)}</div></div>}
+                  {project.id === 'siga' && <RequestDemo />}
+                  {project.link && <Button asChild className="bg-blue-600 hover:bg-blue-500 text-white"><a href={project.link} target="_blank" rel="noopener noreferrer">{t('Abrir projeto')}<ArrowUpRight size={17} className="ml-2" /></a></Button>}
+                </DialogContent>
+              </Dialog>
+              {project.link && <Button asChild variant="ghost" className="text-blue-500"><a href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`${t('Abrir projeto')}: ${project.name}`}>{t('Visitar')}<ArrowUpRight size={16} className="ml-1" /></a></Button>}
+            </div>
+          </CardContent>
+        </Card>)}
       </div>
-    </section>
-  );
+    </div>
+  </section>;
 };
-
 export default PortfolioSection;

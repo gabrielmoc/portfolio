@@ -1,2 +1,7 @@
 node_modules
 dist
+# Private mail configuration and rate-limit state
+**/portfolio-mail/config.php
+**/portfolio-mail/rate-limit.json
+.env
+.env.local

@@ -1,11 +1,12 @@
+import { sendContact, type ContactResult } from "@/lib/contact";
 import { useLanguage } from "@/i18n/LanguageProvider";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Github, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Instagram, Loader2 } from "lucide-react";
 
 // Custom WhatsApp icon component
 const WhatsAppIcon = ({ className }: { className?: string }) => (
@@ -20,6 +21,17 @@ interface ContactSectionProps {
 
 const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
   const { t } = useLanguage();
+  const submitting = useRef(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [result, setResult] = useState<ContactResult | null>(null);
+  const [website, setWebsite] = useState('');
+  const resultMessages: Record<ContactResult, string> = {
+    sent: 'Mensagem enviada! Obrigado pelo contato. Responderei em breve.',
+    rate_limited: 'Você enviou várias mensagens recentemente. Aguarde 15 minutos ou entre em contato pelo WhatsApp.',
+    invalid_fields: 'Confira os dados preenchidos. Nome, e-mail válido e mensagem são obrigatórios.',
+    unavailable: 'Não foi possível enviar agora. Seus dados foram mantidos. Tente novamente mais tarde ou use o WhatsApp.',
+    unconfirmed: 'Não foi possível confirmar o envio. A mensagem pode ter sido recebida. Aguarde antes de tentar novamente ou fale comigo pelo WhatsApp.',
+  };
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -34,15 +46,29 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Create mailto link with form data
-    const subject = `${t("Contato de")} ${formData.name}`;
-    const body = `${t("Nome")}: ${formData.name}\nEmail: ${formData.email}\n${t("Celular")}: ${formData.phone}\n\n${t("Mensagem")}:\n${formData.message}`;
-    const mailtoLink = `mailto:gabrielmoc2010@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    window.open(mailtoLink, '_blank');
+    if (submitting.current) return;
+    submitting.current = true;
+    setIsSubmitting(true);
+    setResult(null);
+    try {
+      const outcome = await sendContact({
+        name: formData.name.trim(),
+        email: formData.email.trim(),
+        phone: formData.phone.trim(),
+        message: formData.message.trim(),
+        website,
+      });
+      setResult(outcome);
+      if (outcome === 'sent') {
+        setFormData({ name: '', email: '', phone: '', message: '' });
+        setWebsite('');
+      }
+    } finally {
+      submitting.current = false;
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -102,7 +128,7 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
           isDarkMode 
             ? 'text-gray-400' 
             : 'text-slate-600'
-        }`}>{t("Tem um projeto em mente ou quer trocar uma ideia? Entre em contato e vamos falar isso!")}</p>
+        }`}>{t("Tem um projeto em mente? Entre em contato e vamos falar isso!")}</p>
         
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
@@ -119,11 +145,17 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
               }`}>{t("Envie uma mensagem")}</CardTitle>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6" aria-busy={isSubmitting}>
+                <div hidden aria-hidden="true">
+                  <input name="website" tabIndex={-1} autoComplete="off" value={website} onChange={event => setWebsite(event.target.value)} />
+                </div>
                 <div>
                   <Input
                     type="text"
                     name="name"
+                    maxLength={120}
+                    autoComplete="name"
+                    disabled={isSubmitting}
                     placeholder={t("Seu nome")} aria-label={t("Seu nome")}
                     value={formData.name}
                     onChange={handleInputChange}
@@ -139,6 +171,9 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   <Input
                     type="email"
                     name="email"
+                    maxLength={254}
+                    autoComplete="email"
+                    disabled={isSubmitting}
                     placeholder={t("Seu email")} aria-label={t("Seu email")}
                     value={formData.email}
                     onChange={handleInputChange}
@@ -154,6 +189,9 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                   <Input
                     type="tel"
                     name="phone"
+                    maxLength={40}
+                    autoComplete="tel"
+                    disabled={isSubmitting}
                     placeholder={t("Seu celular")} aria-label={t("Seu celular")}
                     value={formData.phone}
                     onChange={handleInputChange}
@@ -168,6 +206,8 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                 <div>
                   <Textarea
                     name="message"
+                    maxLength={5000}
+                    disabled={isSubmitting}
                     placeholder={t("Sua mensagem")} aria-label={t("Sua mensagem")}
                     value={formData.message}
                     onChange={handleInputChange}
@@ -182,12 +222,16 @@ const ContactSection = ({ isDarkMode }: ContactSectionProps) => {
                 </div>
                 <Button 
                   type="submit"
+                  disabled={isSubmitting}
                   className={`w-full py-3 text-lg transition-all duration-300 ${
                     isDarkMode 
                       ? 'bg-blue-600 hover:bg-blue-500 text-white' 
                       : 'bg-blue-500 hover:bg-blue-600 text-white'
                   }`}
-                >{t("Enviar")}</Button>
+                >{isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" aria-hidden="true" />}{t(isSubmitting ? "Enviando…" : "Enviar")}</Button>
+                <div role="status" aria-live="polite" aria-atomic="true">
+                  {result && <p className={`rounded-lg border p-3 text-sm ${result === 'sent' ? 'border-emerald-500/40 text-emerald-600 dark:text-emerald-400' : 'border-amber-500/40 text-amber-700 dark:text-amber-300'}`}>{t(resultMessages[result])}</p>}
+                </div>
               </form>
             </CardContent>
           </Card>

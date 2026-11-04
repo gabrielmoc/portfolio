@@ -42,7 +42,7 @@ A interface combina uma identidade visual em tons de azul, suporte a telas menor
 - **Serviços e contato:** apresentação dos serviços, formulário, WhatsApp e redes sociais.
 - **Movimento reduzido:** respeito à preferência `prefers-reduced-motion`; o loop de animação do Canvas é suspenso quando a hero sai da área visível ou a aba fica oculta.
 
-> O formulário monta um link `mailto:` com os dados preenchidos e abre o aplicativo de e-mail do visitante. O envio depende desse aplicativo; este repositório não possui um serviço de envio de mensagens no back-end.
+> O formulário usa um endpoint PHP e SMTP autenticado para enviar mensagens sem sair do site. A ativação exige configurar as credenciais no servidor, fora da pasta pública. Consulte o [guia de configuração do formulário](docs/FORMULARIO-CONTATO.md).
 
 ## Tecnologias
 

@@ -236,5 +236,29 @@ export const portfolioProjects: PortfolioProject[] = [
     "link": "https://mkfretesemudancas.com.br/",
     "id": "mkfretes",
     "name": "MK Fretes e Mudanças"
+  },
+  {
+    "id": "ceustudio",
+    "name": "Céu Studio Digital",
+    "title": "Site Institucional com Blog",
+    "description": "Site de conteúdo com publicações por categoria, apresentação de serviços e galeria de fotos.",
+    "tech": [],
+    "image": "/uploads/ceustudio.jpeg",
+    "link": ""
   }
 ];
+
+export const featuredDetails: Record<string, { challenge: string; structure: string }> = {
+  "relato": {
+    "challenge": "Combinar publicação de conteúdo com acompanhamento de estoque e importações em uma experiência integrada.",
+    "structure": "React e Node compõem a stack informada, com blog e GTranslate. A solução reúne presença institucional, publicações dinâmicas e uma aplicação de monitoramento de estoque."
+  },
+  "siga": {
+    "challenge": "Organizar a gestão de outorgas de recursos hídricos em um fluxo com múltiplas etapas e regras de negócio.",
+    "structure": "Interface em React, back-end em Django e PostgreSQL entre as tecnologias do projeto. O escopo inclui georreferenciamento, geração de documentos e monitoramento operacional."
+  },
+  "avivia": {
+    "challenge": "Reunir conteúdo público, acesso de usuários e administração em um site institucional com blog.",
+    "structure": "React e Node.js compõem a stack com PostgreSQL e JWT. O projeto reúne cadastro e login, área restrita com controle de acesso e gerenciamento de conteúdo."
+  }
+};
