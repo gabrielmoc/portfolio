@@ -61,10 +61,10 @@ const Header = ({ isDarkMode, toggleTheme }: HeaderProps) => {
   return <>
     <header className={`fixed top-0 w-full z-50 backdrop-blur-md border-b ${isDarkMode ? 'bg-black/80 border-slate-800' : 'bg-white/80 border-slate-200'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 gap-3">
-          <a href="#home" aria-label={t('Home')} className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">{'{GC}'}</a>
+        <div className="flex items-center justify-between h-16 gap-3 lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+          <a href="#home" aria-label={t('Home')} className="justify-self-start text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">{'{GC}'}</a>
           <nav aria-label={t('Navegação')} className="hidden lg:flex gap-6 xl:gap-8">{nav.map(item => <button key={item.id} onClick={() => navigate(item.id)} className="text-sm xl:text-base hover:text-blue-400 transition-colors">{t(item.label)}</button>)}</nav>
-          <div className="flex items-center gap-1 sm:gap-3">
+          <div className="flex items-center gap-1 sm:gap-3 lg:justify-self-end">
 
             <Button ref={searchButton} variant="ghost" size="icon" onClick={() => setSearchOpen(true)} aria-label={t('Pesquisar no site')} title={`${t('Pesquisar no site')} (Ctrl/⌘ K)`}><Search size={21} /></Button>
             <DropdownMenu><DropdownMenuTrigger asChild><Button variant="ghost" className="gap-2 px-2" aria-label={t('Idioma')}><span aria-hidden="true" className="text-xl">{activeLanguage.flag}</span><span>{language.toUpperCase()}</span><ChevronDown size={14} className="text-blue-400" /></Button></DropdownMenuTrigger>
