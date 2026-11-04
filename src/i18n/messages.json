@@ -666,5 +666,417 @@
   "Digite os 11 números do celular com DDD: (99)99999-9999.": [
     "Enter the 11 digits of your Brazilian mobile number, including the area code: (99)99999-9999.",
     "Introduce los 11 dígitos del móvil brasileño, incluido el código de área: (99)99999-9999."
+  ],
+  "Todos": [
+    "All",
+    "Todos"
+  ],
+  "Aplicações Full Stack": [
+    "Full Stack Applications",
+    "Aplicaciones Full Stack"
+  ],
+  "E-commerce": [
+    "E-commerce",
+    "Comercio electrónico"
+  ],
+  "Sites e conteúdo": [
+    "Websites & Content",
+    "Sitios y contenido"
+  ],
+  "Landing pages": [
+    "Landing Pages",
+    "Landing pages"
+  ],
+  "Filtrar projetos": [
+    "Filter projects",
+    "Filtrar proyectos"
+  ],
+  "projetos": [
+    "projects",
+    "proyectos"
+  ],
+  "Experimente uma solicitação": [
+    "Try a request",
+    "Prueba una solicitud"
+  ],
+  "Use dados fictícios. Esta simulação acontece apenas no navegador, não envia dados ao SIGA e é apagada ao fechar esta janela. As regras são ilustrativas.": [
+    "Use fictional data. This simulation runs only in your browser, sends no data to SIGA, and is cleared when you close this dialog. The rules are illustrative.",
+    "Usa datos ficticios. Esta simulación funciona solo en el navegador, no envía datos a SIGA y se borra al cerrar esta ventana. Las reglas son ilustrativas."
+  ],
+  "Nome do projeto fictício": [
+    "Fictional project name",
+    "Nombre del proyecto ficticio"
+  ],
+  "Ex.: Projeto de demonstração": [
+    "E.g. Demo project",
+    "Ej.: Proyecto de demostración"
+  ],
+  "Preencha o nome do projeto.": [
+    "Enter the project name.",
+    "Introduce el nombre del proyecto."
+  ],
+  "Vazão solicitada (m³/h)": [
+    "Requested flow rate (m³/h)",
+    "Caudal solicitado (m³/h)"
+  ],
+  "Nesta demonstração, informe um valor maior que zero e até 1.000.": [
+    "For this demo, enter a value greater than zero and up to 1,000.",
+    "En esta demostración, introduce un valor mayor que cero y hasta 1.000."
+  ],
+  "Criar solicitação": [
+    "Create request",
+    "Crear solicitud"
+  ],
+  "Preencher exemplo": [
+    "Fill in example",
+    "Rellenar ejemplo"
+  ],
+  "Projeto de demonstração": [
+    "Demo project",
+    "Proyecto de demostración"
+  ],
+  "Solicitação simulada": [
+    "Simulated request",
+    "Solicitud simulada"
+  ],
+  "Recebida": [
+    "Received",
+    "Recibida"
+  ],
+  "Em análise": [
+    "Under review",
+    "En revisión"
+  ],
+  "Concluída": [
+    "Completed",
+    "Completada"
+  ],
+  "Corrija os campos indicados. Nenhuma solicitação foi criada.": [
+    "Correct the indicated fields. No request was created.",
+    "Corrige los campos indicados. No se ha creado ninguna solicitud."
+  ],
+  "Preencha os campos ou use o exemplo para começar.": [
+    "Complete the fields or use the example to get started.",
+    "Rellena los campos o usa el ejemplo para empezar."
+  ],
+  "Simular análise": [
+    "Simulate review",
+    "Simular revisión"
+  ],
+  "Concluir demonstração": [
+    "Complete demo",
+    "Completar demostración"
+  ],
+  "Ver dados técnicos simulados": [
+    "View simulated technical data",
+    "Ver datos técnicos simulados"
+  ],
+  "Estes dados ilustram uma API. Nenhuma requisição é enviada a um servidor.": [
+    "This data illustrates an API. No request is sent to a server.",
+    "Estos datos ilustran una API. No se envía ninguna petición a un servidor."
+  ],
+  "Dados da solicitação": [
+    "Request data",
+    "Datos de la solicitud"
+  ],
+  "Resposta simulada": [
+    "Simulated response",
+    "Respuesta simulada"
+  ],
+  "Dados": [
+    "Data",
+    "Datos"
+  ],
+  "Aplicação": [
+    "Application",
+    "Aplicación"
+  ],
+  "Tradução": [
+    "Translation",
+    "Traducción"
+  ],
+  "Regras de negócio": [
+    "Business rules",
+    "Reglas de negocio"
+  ],
+  "Acesso e aplicação": [
+    "Access & application",
+    "Acceso y aplicación"
+  ],
+  "A interface organiza as telas e responde às ações do visitante.": [
+    "The interface organizes screens and responds to visitor actions.",
+    "La interfaz organiza las pantallas y responde a las acciones del visitante."
+  ],
+  "Componentes e estado permitem atualizar a tela sem recarregar a página.": [
+    "Components and state enable screen updates without reloading the page.",
+    "Los componentes y el estado permiten actualizar la pantalla sin recargar la página."
+  ],
+  "O banco relacional representa a camada de armazenamento da aplicação.": [
+    "The relational database represents the application storage layer.",
+    "La base de datos relacional representa la capa de almacenamiento de la aplicación."
+  ],
+  "Relacionamentos e restrições ajudam a manter os registros consistentes.": [
+    "Relationships and constraints help keep records consistent.",
+    "Las relaciones y restricciones ayudan a mantener la coherencia de los registros."
+  ],
+  "A camada de aplicação dá suporte às funcionalidades de conteúdo e gestão descritas neste projeto.": [
+    "The application layer supports the content and management features described in this project.",
+    "La capa de aplicación da soporte a las funciones de contenido y gestión descritas en este proyecto."
+  ],
+  "Separar interface e regras de negócio permite evoluir cada parte com responsabilidades claras.": [
+    "Separating the interface from business rules gives each part clear responsibilities as it evolves.",
+    "Separar la interfaz y las reglas de negocio permite evolucionar cada parte con responsabilidades claras."
+  ],
+  "GTranslate é a ferramenta de tradução listada na stack deste projeto.": [
+    "GTranslate is the translation tool listed in this project stack.",
+    "GTranslate es la herramienta de traducción incluida en la stack de este proyecto."
+  ],
+  "A tradução amplia o acesso ao conteúdo para visitantes de outros idiomas.": [
+    "Translation makes content accessible to visitors who speak other languages.",
+    "La traducción amplía el acceso al contenido para visitantes de otros idiomas."
+  ],
+  "O back-end representa a camada que processa solicitações e valida as regras do sistema.": [
+    "The back end represents the layer that processes requests and validates system rules.",
+    "El back-end representa la capa que procesa solicitudes y valida las reglas del sistema."
+  ],
+  "Uma validação na interface melhora a experiência, mas o servidor também precisa validar os dados.": [
+    "Interface validation improves the experience, but the server must also validate the data.",
+    "La validación en la interfaz mejora la experiencia, pero el servidor también debe validar los datos."
+  ],
+  "Node.js e JWT estão na stack do projeto, que inclui login e uma área de acesso restrito.": [
+    "Node.js and JWT are in the project stack, which includes login and a restricted area.",
+    "Node.js y JWT forman parte de la stack del proyecto, que incluye inicio de sesión y un área restringida."
+  ],
+  "Autenticação identifica o usuário; autorização define quais ações ele pode executar.": [
+    "Authentication identifies the user; authorization defines which actions they can perform.",
+    "La autenticación identifica al usuario; la autorización define qué acciones puede realizar."
+  ],
+  "Arquitetura explorável": [
+    "Explore the architecture",
+    "Explora la arquitectura"
+  ],
+  "Visão conceitual baseada nas tecnologias cadastradas. Não representa o diagrama de infraestrutura de produção. Selecione uma camada para explorar.": [
+    "Conceptual view based on the listed technologies, not a production infrastructure diagram. Select a layer to explore.",
+    "Vista conceptual basada en las tecnologías indicadas. No representa el diagrama de infraestructura de producción. Selecciona una capa para explorar."
+  ],
+  "Camadas da solução": [
+    "Solution layers",
+    "Capas de la solución"
+  ],
+  "Conceito técnico": [
+    "Technical concept",
+    "Concepto técnico"
+  ],
+  "Relógio de demonstração": [
+    "Demo watch",
+    "Reloj de demostración"
+  ],
+  "Kit de brindes de demonstração": [
+    "Demo promotional gift kit",
+    "Kit de regalos promocionales de demostración"
+  ],
+  "Vaso decorativo de demonstração": [
+    "Demo decorative vase",
+    "Jarrón decorativo de demostración"
+  ],
+  "Exemplo com dados fictícios inspirado no tipo de projeto. Não acessa o sistema real, não faz pagamentos e não envia dados. Tudo é apagado ao fechar esta janela.": [
+    "Example with fictional data inspired by this type of project. It does not access the real system, make payments, or send data. Everything is cleared when you close this dialog.",
+    "Ejemplo con datos ficticios inspirado en este tipo de proyecto. No accede al sistema real, no realiza pagos ni envía datos. Todo se borra al cerrar esta ventana."
+  ],
+  "Estado local da demonstração. Nenhuma requisição é enviada a um servidor.": [
+    "Local demo state. No request is sent to a server.",
+    "Estado local de la demostración. No se envía ninguna petición a un servidor."
+  ],
+  "Experimente um carrinho": [
+    "Try a shopping cart",
+    "Prueba un carrito"
+  ],
+  "Pedido fictício criado. Nenhuma compra ou cobrança foi realizada.": [
+    "Fictional order created. No purchase or charge was made.",
+    "Pedido ficticio creado. No se ha realizado ninguna compra ni cobro."
+  ],
+  "Informe uma quantidade inteira dentro do estoque disponível.": [
+    "Enter a whole quantity within available stock.",
+    "Introduce una cantidad entera dentro del stock disponible."
+  ],
+  "Altere a quantidade para ver o total e o frete serem recalculados.": [
+    "Change the quantity to recalculate the total and shipping.",
+    "Cambia la cantidad para recalcular el total y el envío."
+  ],
+  "Estoque fictício": [
+    "Fictional stock",
+    "Stock ficticio"
+  ],
+  "Quantidade": [
+    "Quantity",
+    "Cantidad"
+  ],
+  "Regra fictícia: frete de R$ 20; grátis a partir de R$ 300. Preços e estoque são apenas exemplos.": [
+    "Fictional rule: R$20 shipping; free from R$300. Prices and stock are examples only.",
+    "Regla ficticia: envío de R$20; gratis a partir de R$300. Los precios y el stock son solo ejemplos."
+  ],
+  "Subtotal": [
+    "Subtotal",
+    "Subtotal"
+  ],
+  "Frete": [
+    "Shipping",
+    "Envío"
+  ],
+  "Total": [
+    "Total",
+    "Total"
+  ],
+  "Pedido simulado": [
+    "Simulated order",
+    "Pedido simulado"
+  ],
+  "Simular pedido": [
+    "Simulate order",
+    "Simular pedido"
+  ],
+  "Registre uma entrada ou saída para acompanhar o saldo.": [
+    "Record incoming or outgoing stock to track the balance.",
+    "Registra una entrada o salida para seguir el saldo."
+  ],
+  "Use uma quantidade inteira de 1 a 1.000. A saída não pode superar o saldo, e o saldo máximo é 10.000.": [
+    "Use a whole quantity from 1 to 1,000. Outgoing stock cannot exceed the balance, and the maximum balance is 10,000.",
+    "Usa una cantidad entera de 1 a 1.000. La salida no puede superar el saldo y el saldo máximo es 10.000."
+  ],
+  "Movimentação simulada registrada. Confira o novo saldo e o histórico.": [
+    "Simulated movement recorded. Check the new balance and history.",
+    "Movimiento simulado registrado. Consulta el nuevo saldo y el historial."
+  ],
+  "Experimente o controle de estoque": [
+    "Try inventory management",
+    "Prueba la gestión de inventario"
+  ],
+  "Saldo do item fictício": [
+    "Fictional item balance",
+    "Saldo del artículo ficticio"
+  ],
+  "Estoque inicial: 20 unidades fictícias. Experimente retirar mais que o saldo.": [
+    "Initial stock: 20 fictional units. Try removing more than the balance.",
+    "Stock inicial: 20 unidades ficticias. Intenta retirar más que el saldo."
+  ],
+  "Registrar entrada": [
+    "Record incoming stock",
+    "Registrar entrada"
+  ],
+  "Registrar saída": [
+    "Record outgoing stock",
+    "Registrar salida"
+  ],
+  "Últimas 5 movimentações": [
+    "Last 5 movements",
+    "Últimos 5 movimientos"
+  ],
+  "Entrada": [
+    "Incoming",
+    "Entrada"
+  ],
+  "Saída": [
+    "Outgoing",
+    "Salida"
+  ],
+  "Saldo": [
+    "Balance",
+    "Saldo"
+  ],
+  "Novidades": [
+    "News",
+    "Novedades"
+  ],
+  "Artigos": [
+    "Articles",
+    "Artículos"
+  ],
+  "Crie um rascunho e publique apenas nesta prévia fictícia.": [
+    "Create a draft and publish only in this fictional preview.",
+    "Crea un borrador y publícalo solo en esta vista previa ficticia."
+  ],
+  "Apresentação do projeto": [
+    "Project introduction",
+    "Presentación del proyecto"
+  ],
+  "Publicação fictícia para experimentar a navegação por categorias.": [
+    "Fictional post to try browsing by category.",
+    "Publicación ficticia para probar la navegación por categorías."
+  ],
+  "Bastidores da solução": [
+    "Behind the solution",
+    "Cómo se creó la solución"
+  ],
+  "Outro exemplo de conteúdo. Nenhuma destas publicações pertence ao site real.": [
+    "Another content example. None of these posts belong to the real website.",
+    "Otro ejemplo de contenido. Ninguna de estas publicaciones pertenece al sitio real."
+  ],
+  "Preencha o título e o texto antes de publicar na prévia.": [
+    "Enter a title and text before publishing in the preview.",
+    "Introduce el título y el texto antes de publicar en la vista previa."
+  ],
+  "Conteúdo publicado apenas na prévia. Nenhum site real foi alterado.": [
+    "Content published only in the preview. No real website was changed.",
+    "Contenido publicado solo en la vista previa. No se ha modificado ningún sitio real."
+  ],
+  "Experimente uma publicação": [
+    "Try publishing a post",
+    "Prueba una publicación"
+  ],
+  "Editor de exemplo": [
+    "Sample editor",
+    "Editor de ejemplo"
+  ],
+  "Título da publicação": [
+    "Post title",
+    "Título de la publicación"
+  ],
+  "Texto da publicação": [
+    "Post text",
+    "Texto de la publicación"
+  ],
+  "Categoria": [
+    "Category",
+    "Categoría"
+  ],
+  "Publicar na prévia": [
+    "Publish in preview",
+    "Publicar en la vista previa"
+  ],
+  "Conteúdo de exemplo": [
+    "Sample content",
+    "Contenido de ejemplo"
+  ],
+  "Esta publicação foi criada na demonstração interativa do portfólio.": [
+    "This post was created in the portfolio interactive demo.",
+    "Esta publicación se ha creado en la demostración interactiva del portfolio."
+  ],
+  "Publicação retirada da prévia. O rascunho pode ser editado novamente.": [
+    "Post removed from the preview. The draft can be edited again.",
+    "Publicación retirada de la vista previa. El borrador se puede volver a editar."
+  ],
+  "Retirar da prévia": [
+    "Remove from preview",
+    "Retirar de la vista previa"
+  ],
+  "Prévia pública fictícia": [
+    "Fictional public preview",
+    "Vista pública ficticia"
+  ],
+  "Filtrar publicações": [
+    "Filter posts",
+    "Filtrar publicaciones"
+  ],
+  "publicações na prévia": [
+    "posts in preview",
+    "publicaciones en la vista previa"
+  ],
+  "Carregando experiência…": [
+    "Loading experience…",
+    "Cargando experiencia…"
+  ],
+  "Simulação disponível nos detalhes": [
+    "Simulation available in details",
+    "Simulación disponible en los detalles"
   ]
 }

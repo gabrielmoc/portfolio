@@ -48,6 +48,7 @@ const Header = ({ isDarkMode, toggleTheme }: HeaderProps) => {
   const navigate = (id: string, tab?: string) => {
     navigating.current = true;
     setMobileOpen(false); setSearchOpen(false);
+    if (id.startsWith('project-')) window.dispatchEvent(new Event('portfolio:reveal'));
     requestAnimationFrame(() => {
       if (tab) document.getElementById(`about-tab-${tab}`)?.focus();
       const target = document.getElementById(id);
