@@ -650,5 +650,21 @@
   "Não foi possível confirmar o envio. A mensagem pode ter sido recebida. Aguarde antes de tentar novamente ou fale comigo pelo WhatsApp.": [
     "Unable to confirm delivery. Your message may have been received. Wait before trying again or contact me on WhatsApp.",
     "No se pudo confirmar el envío. Es posible que se haya recibido el mensaje. Espera antes de volver a intentarlo o contacta conmigo por WhatsApp."
+  ],
+  "Falar pelo WhatsApp": [
+    "Chat on WhatsApp",
+    "Hablar por WhatsApp"
+  ],
+  "Olá, Gabriel! Vi seu portfólio e gostaria de conversar sobre um projeto.": [
+    "Hi, Gabriel! I saw your portfolio and would like to discuss a project.",
+    "¡Hola, Gabriel! He visto tu portfolio y me gustaría hablar sobre un proyecto."
+  ],
+  "Confira os dados preenchidos. Nome, e-mail válido, celular com DDD e mensagem são obrigatórios.": [
+    "Check your details. A name, valid email, mobile number with area code, and message are required.",
+    "Revisa los datos. El nombre, un correo válido, el móvil con código de área y el mensaje son obligatorios."
+  ],
+  "Digite os 11 números do celular com DDD: (99)99999-9999.": [
+    "Enter the 11 digits of your Brazilian mobile number, including the area code: (99)99999-9999.",
+    "Introduce los 11 dígitos del móvil brasileño, incluido el código de área: (99)99999-9999."
   ]
 }

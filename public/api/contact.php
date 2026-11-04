@@ -52,6 +52,7 @@ if ($data['website'] !== '') {
 }
 if ($data['name'] === '' || $data['message'] === '' ||
     !filter_var($data['email'], FILTER_VALIDATE_EMAIL) ||
+    !preg_match('/^\([0-9]{2}\)[0-9]{5}-[0-9]{4}$/D', $data['phone']) ||
     preg_match('/[\r\n]/', $data['name'] . $data['email'] . $data['phone'])) {
     respond(422, 'invalid_fields');
 }

@@ -4,7 +4,7 @@ interface FooterProps {
 
 const Footer = ({ isDarkMode }: FooterProps) => (
   <footer
-    className={`border-t px-4 py-7 transition-colors duration-300 ${
+    className={`border-t px-4 pt-7 pb-24 sm:pb-7 transition-colors duration-300 ${
       isDarkMode
         ? 'border-slate-800 bg-black text-slate-400'
         : 'border-slate-200 bg-white text-slate-600'

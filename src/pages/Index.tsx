@@ -7,6 +7,7 @@ import ServicesSection from "@/components/ServicesSection";
 import PortfolioSection from "@/components/PortfolioSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 const Index = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -31,6 +32,7 @@ const Index = () => {
       <PortfolioSection isDarkMode={isDarkMode} />
       <ContactSection isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
+      <FloatingWhatsApp />
     </div>
   );
 };
