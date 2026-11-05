@@ -61,13 +61,16 @@ if ($data['name'] === '' || $data['message'] === '' ||
 $privateDirectory = getenv('PORTFOLIO_MAIL_DIR') ?: dirname(__DIR__, 2) . '/portfolio-mail';
 $configPath = $privateDirectory . '/config.php';
 if (!is_file($configPath)) {
+    error_log('Portfolio contact: config_missing');
     respond(503, 'unavailable');
 }
+$stage = 'config_read';
 try {
     $config = require $configPath;
     if (!is_array($config) || empty($config['password']) ||
         !filter_var($config['username'] ?? '', FILTER_VALIDATE_EMAIL) ||
         !filter_var($config['recipient'] ?? '', FILTER_VALIDATE_EMAIL)) {
+        error_log('Portfolio contact: config_invalid');
         respond(503, 'unavailable');
     }
     $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
@@ -76,6 +79,7 @@ try {
     }
 
     // A locked, private ledger limits both individual IPs and total SMTP attempts.
+    $stage = 'rate_limit';
     $ledger = fopen($privateDirectory . '/rate-limit.json', 'c+');
     if ($ledger === false || !flock($ledger, LOCK_EX)) {
         throw new RuntimeException('Rate limiter unavailable');
@@ -110,9 +114,11 @@ try {
     flock($ledger, LOCK_UN);
     fclose($ledger);
 
-    require_once $privateDirectory . '/PHPMailer/Exception.php';
-    require_once $privateDirectory . '/PHPMailer/PHPMailer.php';
-    require_once $privateDirectory . '/PHPMailer/SMTP.php';
+    $stage = 'mailer_load';
+    require_once __DIR__ . '/lib/PHPMailer/Exception.php';
+    require_once __DIR__ . '/lib/PHPMailer/PHPMailer.php';
+    require_once __DIR__ . '/lib/PHPMailer/SMTP.php';
+    $stage = 'smtp_setup';
     $mail = new PHPMailer(true);
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
@@ -130,10 +136,11 @@ try {
     $mail->Subject = 'Novo contato pelo portfolio';
     $mail->isHTML(false);
     $mail->Body = "Nome: {$data['name']}\nE-mail: {$data['email']}\nCelular: {$data['phone']}\n\nMensagem:\n{$data['message']}";
+    $stage = 'smtp_send';
     $mail->send();
     respond(200, 'sent');
 } catch (Throwable $error) {
     // Never return SMTP diagnostics, credentials or visitor data to the browser.
-    error_log('Portfolio contact: mail service failed (' . get_class($error) . ')');
+    error_log('Portfolio contact: ' . $stage . ' failed (' . get_class($error) . ')');
     respond(503, 'unavailable');
 }

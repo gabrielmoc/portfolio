@@ -17,28 +17,26 @@ Use a senha de app, nunca a senha comum da conta. Não envie a senha no chat, n�
 
 Selecione PHP 8.2 ou superior na hospedagem, com OpenSSL habilitado. O envio também depende de a hospedagem permitir conexão SMTP com `smtp.gmail.com:465`.
 
-Execute `npm run build` e envie **o conteúdo de `dist/`** para `public_html`. O build já inclui `api/contact.php`.
+Execute `npm run build` e envie **o conteúdo de `dist/`** para `public_html`. O build já inclui `api/contact.php`, a biblioteca PHPMailer em `api/lib/PHPMailer/` e os arquivos `.htaccess`. Não é necessário instalar Composer ou Node.js na hospedagem. Ative a exibição de arquivos ocultos para enviar também os `.htaccess`.
 
 Envie também a pasta `server/portfolio-mail` para o diretório **imediatamente acima de `public_html`**, como uma pasta irmã:
 
 ```text
 pasta-do-dominio/
 ├── public_html/
+│   ├── .htaccess
 │   ├── index.html
 │   ├── assets/
 │   ├── uploads/
 │   └── api/
-│       └── contact.php
+│       ├── contact.php
+│       └── lib/
+│           ├── .htaccess
+│           └── PHPMailer/
 └── portfolio-mail/
     ├── .htaccess
     ├── config.example.php
-    ├── config.php                 # Criado por você apenas no servidor
-    └── PHPMailer/
-        ├── PHPMailer.php
-        ├── SMTP.php
-        ├── Exception.php
-        ├── LICENSE
-        └── NOTICE.md
+    └── config.php                 # Criado por você apenas no servidor
 ```
 
 **Não coloque `portfolio-mail` dentro de `public_html`.** No gerenciador de arquivos, escolha o acesso aos arquivos da hospedagem que permite visualizar o diretório pai. Se o acesso disponível estiver restrito a `public_html`, peça acesso ao diretório pai ou configure `PORTFOLIO_MAIL_DIR` no servidor para outro diretório privado; não mova a senha para a área pública.
@@ -50,6 +48,12 @@ Copie `config.example.php` para `config.php`, dentro da pasta privada `portfolio
 O usuário PHP da hospedagem precisa conseguir ler esses arquivos e escrever na pasta privada: o endpoint cria `rate-limit.json` para limitar tentativas. Não use permissões `777`. Esse arquivo guarda horários e identificadores derivados do IP, não o conteúdo das mensagens.
 
 O arquivo `.htaccess` é uma proteção adicional para Apache/LiteSpeed; não substitui a instalação fora da pasta pública.
+
+## Atualizações posteriores
+
+Depois da configuração inicial, execute `npm run build` e envie novamente **o conteúdo** de `dist/` para `public_html`, substituindo os arquivos correspondentes. Envie os novos assets e arquivos PHP antes do `index.html`. Não apague a pasta privada `portfolio-mail` nem substitua seu `config.php`. Faça backup da publicação anterior antes de atualizar e preserve arquivos de configuração da hospedagem; se já houver um `.htaccess` personalizado, mescle as regras em vez de sobrescrevê-lo sem conferir.
+
+O `index.html` solicita revalidação de cache e os assets gerados pelo Vite têm nomes com hash. Se houver CDN ou cache da Hostinger ativo, limpe esse cache após publicar; uma aba já aberta pode precisar ser recarregada. A publicação não pode garantir atualização instantânea em abas abertas ou caches externos.
 
 ## 4. Conferir o envio
 

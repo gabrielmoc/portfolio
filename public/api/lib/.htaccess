@@ -1,0 +1,2 @@
+# PHP includes remain available; direct HTTP access is unnecessary.
+Require all denied
